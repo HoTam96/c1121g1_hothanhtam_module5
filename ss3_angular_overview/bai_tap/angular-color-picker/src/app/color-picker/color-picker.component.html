@@ -1,0 +1,17 @@
+<h2 style="text-align: center"> color editor</h2>
+
+<div class="choose-color">
+  <label>choose pick color </label>
+
+  <select [(ngModel)]="color">
+    <option value="red">màu do</option>
+    <option selected value="blue">màu xanh</option>
+    <option value="orange">màu cam</option>
+    <option value="violet">màu tím</option>
+  </select>
+
+</div>
+
+<div class="display" [style.background-color]="color">
+
+</div>

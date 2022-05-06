@@ -1,0 +1,18 @@
+<p>calculator </p>
+<label>number first</label>
+<div>
+  <input type="number" #element1>
+</div>
+<br>
+<label>number second</label>
+<div>
+  <input type="number" #element2>
+</div>
+<select [(ngModel)]="phepTinh">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="x">x</option>
+  <option value="/">/</option>
+</select>
+
+<p>kết quả : {{result(element1.value, element2.value)}}</p>

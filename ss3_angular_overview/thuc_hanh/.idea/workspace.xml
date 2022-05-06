@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe1537c-10e0-41fd-8fbb-613fab3a546a" name="Default Changelist" comment="" />
+    <list default="true" id="abe1537c-10e0-41fd-8fbb-613fab3a546a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../castudy_module5/customer/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap/.idea/bai_tap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap/angular-simple-calculator/src/app/ICalculator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../castudy_module5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../castudy_module5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2/bai_tap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2/bai_tap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/angular-change-font-size" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="28jwlYL7GKfGYvWL5QxgtDBzcI3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -29,7 +37,9 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -37,7 +47,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="D:\module5\ss3_angular_overview\thuc_hanh\angular-change-font-size\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\module5\ss3_angular_overview\thuc_hanh\angular-show-pet-info\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -50,6 +60,9 @@
       <option name="presentableId" value="Default" />
       <updated>1651743453713</updated>
       <workItem from="1651743454791" duration="2218000" />
+      <workItem from="1651760018056" duration="6509000" />
+      <workItem from="1651807700069" duration="5178000" />
+      <workItem from="1651819715712" duration="2935000" />
     </task>
     <servers />
   </component>
@@ -57,6 +70,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="549" y="164" key="FileChooserDialogImpl" timestamp="1651811554204">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="164" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1651811554204" />
     <state width="1500" height="205" key="GridCell.Tab.0.bottom" timestamp="1651745773001">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -73,5 +90,9 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1500" height="205" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1651745773001" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1651766539260">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1651766539260" />
   </component>
 </project>
