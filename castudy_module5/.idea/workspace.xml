@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a400c92-b25a-4602-b76c-6dded730c48a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/customer/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/.idea/bai_tap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-simple-calculator/src/app/ICalculator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/Facility.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/bai_tap/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/font-size-editor/font-size-editor.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/font-size-editor/font-size-editor.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/font-size-editor/font-size-editor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/font-size-editor/font-size-editor.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-simple-calculator/src/app/simple-calculator/simple-calculator.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss3_angular_overview/bai_tap/angular-simple-calculator/src/app/simple-calculator/simple-calculator.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +62,7 @@
       <workItem from="1651769723676" duration="1445000" />
       <workItem from="1651811556520" duration="297000" />
       <workItem from="1651828201588" duration="2731000" />
+      <workItem from="1651917218984" duration="3270000" />
     </task>
     <servers />
   </component>
@@ -87,5 +81,9 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="549" y="164" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1651829813374" />
+    <state x="426" y="187" key="run.anything.popup" timestamp="1651919776869">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="426" y="187" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1651919776869" />
   </component>
 </project>
