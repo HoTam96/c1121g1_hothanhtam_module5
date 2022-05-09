@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a400c92-b25a-4602-b76c-6dded730c48a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/customer/CustomerList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contract/contractList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contract/createContract.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_angular_component_emplate/bai_tap/hacker-new/src/app/article.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/create.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +45,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\module5\castudy_module5\customer" />
+    </key>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -63,7 +70,9 @@
       <workItem from="1651828201588" duration="2731000" />
       <workItem from="1651917218984" duration="5072000" />
       <workItem from="1651941993802" duration="62000" />
-      <workItem from="1652048301488" duration="676000" />
+      <workItem from="1652048301488" duration="1095000" />
+      <workItem from="1652067904355" duration="190000" />
+      <workItem from="1652080571167" duration="4854000" />
     </task>
     <servers />
   </component>
@@ -78,10 +87,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="164" key="FileChooserDialogImpl" timestamp="1651829813374">
+    <state x="549" y="164" key="FileChooserDialogImpl" timestamp="1652068092083">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="164" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1651829813374" />
+    <state x="549" y="164" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1652068092083" />
     <state x="277" y="52" key="SettingsEditor" timestamp="1652048480552">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
