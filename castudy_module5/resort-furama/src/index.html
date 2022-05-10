@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ResortFurama</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Font Awesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <!-- MDB -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <app-root></app-root>
+</body>
+
+
+
+
+
+
+
+
+
+<!--modal-->
+<div
+  class="modal fade"
+  id="callModal"
+  data-mdb-backdrop="static"
+  data-mdb-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">CHỌN LOẠI DỊCH VỤ </h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-footer">
+        <!--                <button type="button"  data-mdb-dismiss="modal">Close</button>-->
+        <!--                <button type="button" class="btn btn-primary" id="delete_customer_id">ok</button>-->
+        <button  class="btn btn-secondary">
+          <a href="service/Facility.html">Villa</a></button>
+        <button  class="btn btn-secondary">
+          <a href="service/Facility.html">house</a></button>
+        <button  class="btn btn-secondary">
+          <a href="service/Facility.html">room</a></button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--end modal-->
+
+<!--xóa modal-->
+
+<div
+  class="modal fade"
+  id="deleteModal"
+  data-mdb-backdrop="static"
+  data-mdb-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabels">xóa khách hàng </h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        <!--                <input type="hidden" id="customerDelete_id" name="customer_id">-->
+      </div>
+      <h4>bạn có muốn xóa khách hàng này không?</h4>
+      <div class="modal-body" id="customer_delete">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="delete_customer_id">ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--end xóa modal-->
+
+
+<!-- MDB -->
+<!--<script-->
+<!--  type="text/javascript"-->
+<!--  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"-->
+<!--&gt;</script>-->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.form-outline').forEach((formOutline) => {
+      new mdb.Input(formOutline).init();
+    });
+
+    document.querySelectorAll('.form-outline').forEach((formOutline) => {
+      new mdb.Input(formOutline).update();
+    });
+  });
+</script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"
+></script>
+<!-- AJAX -->
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<script src="static/js/jquery-3.6.0.min.js"></script>
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<!--  Modal -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</html>
