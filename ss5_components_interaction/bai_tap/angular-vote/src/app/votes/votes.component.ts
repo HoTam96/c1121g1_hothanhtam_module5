@@ -1,8 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output, SimpleChanges} from '@angular/core';
-import {RatingInit} from "../rating-init";
+import {RatingInit} from '../rating-init';
 
-class IRatingUnit {
-}
 
 @Component({
   selector: 'app-votes',
@@ -16,14 +14,13 @@ export class VotesComponent implements OnInit {
   ratingValue = 5;
   @Input()
   showRatingValue = true;
-
   @Output()
   rateChange = new EventEmitter<number>();
 
-  ratingUnits: Array<IRatingUnit> = [];
-
-  constructor() { }
-
+  ratingUnits: { active: boolean; value: number }[] = [];
+  constructor() {
+  }
+  // tslint:disable-next-line:use-lifecycle-interface
   ngOnChanges(changes: SimpleChanges) {
     if ('max' in changes) {
       let max = changes.max.currentValue;
@@ -41,6 +38,7 @@ export class VotesComponent implements OnInit {
       }));
   }
 
+
   ngOnInit() {
     this.calculate(this.max, this.ratingValue);
   }
@@ -50,11 +48,11 @@ export class VotesComponent implements OnInit {
     this.ratingUnits.forEach((item, idx) => item.active = idx < this.ratingValue);
     this.rateChange.emit(this.ratingValue);
   }
+
   enter(index) {
     this.ratingUnits.forEach((item, idx) => item.active = idx <= index);
   }
   reset() {
     this.ratingUnits.forEach((item, idx) => item.active = idx < this.ratingValue);
   }
-
 }
