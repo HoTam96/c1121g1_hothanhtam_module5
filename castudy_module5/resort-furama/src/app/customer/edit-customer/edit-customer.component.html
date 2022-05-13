@@ -5,78 +5,130 @@
 </div>
 
 <div class=" col-4 mx-auto">
-  <form>
+  <form [formGroup]="editCustomer" (ngSubmit)="onsubmit()">
     <div class="modal-body">
       <div class="form-group mb-4">
         <div class="form-outline">
-          <input value="KH-001" type="text" id="customerCode" class="form-control"/>
+          <input type="text" id="customerCode" class="form-control" formControlName="customerCode"/>
           <label class="form-label" for="customerCode">Mã khách hàng<span class="text-danger">(*)</span></label>
         </div>
-        <small class="text-danger"></small>
+
+        <div *ngIf="!customerCode.valid &&(customerCode.dirty || customerCode.touched)">
+          <small class="text-danger" [hidden]="!customerCode.errors.required">
+            mã khách hàng không được để trống
+          </small>
+          <small class="text-danger" [hidden]="!customerCode.errors.pattern">
+            mã khách hàng sai định dạng
+          </small>
+        </div>
+
       </div>
       <div class="form-group mb-4">
         <div class="form-outline">
-          <input value="Nguyễn văn A" type="text" id="customerName" class="form-control"/>
+          <input type="text" id="customerName" class="form-control" formControlName="name"/>
           <label class="form-label" for="customerName">Họ Tên<span class="text-danger">(*)</span></label>
         </div>
-        <small class="text-danger"></small>
+
+        <div *ngIf="!name.valid &&(name.dirty || name.touched)">
+          <small class="text-danger" [hidden]="!name.errors.required">
+            tên khách hàng không được để trống
+          </small>
+        </div>
+
       </div>
 
-      <label class="form-label" for="gender">Giới tính</label>
-      <select id="gender" class="form-control mb-4">
-        <option selected>Nam</option>
-        <option>Nữ</option>
-        <option>Khác</option>
-      </select>
 
       <div class="form-group mb-4">
         <div class="form-outline">
-          <input value="2002-12-09" type="date" id="dayOfBirth" class="form-control"/>
-          <label class="form-label" for="dayOfBirth">Ngày sinh<span class="text-danger">(*)</span></label>
+          <input type="text" id="gender" class="form-control" formControlName="gender"/>
+          <label class="form-label" for="gender">Nam</label>
         </div>
-        <small class="text-danger"></small>
+        <div *ngIf="!gender.valid &&(gender.dirty || gender.touched)">
+          <small class="text-danger" [hidden]="!gender.errors.required">
+            giới tính không được để trống
+          </small>
+        </div>
 
-      </div>
-      <div class="form-group mb-4">
-        <div class="form-outline">
-          <input value="09876568999" type="text" id="idCard" class="form-control"/>
-          <label class="form-label" for="idCard">Số CMND<span class="text-danger">(*)</span></label>
-        </div>
-        <small class="text-danger"></small>
-      </div>
-      <div class="form-group mb-4">
-        <div class="form-outline">
-          <input value="0098987533" type="text" id="phoneNumber" class="form-control"/>
-          <label class="form-label" for="phoneNumber">Số điện thoại<span class="text-danger">(*)</span></label>
-        </div>
-        <small class="text-danger"></small>
-      </div>
-      <div class="form-group mb-4">
-        <div class="form-outline">
-          <input value="vanA@gmail.com" type="text" id="email" class="form-control"/>
-          <label class="form-label" for="email">Email</label>
-        </div>
-        <small class="text-danger"></small>
-      </div>
-      <div class="form-group mb-4">
-        <div class="form-outline">
-          <input value="hải châu , đà nẵng" type="text" id="address" class="form-control"/>
-          <label class="form-label" for="address">Địa chỉ</label>
-        </div>
-        <small class="text-danger"></small>
-      </div>
 
-      <label class="form-label" for="customerType">Loại</label>
-      <select id="customerType" class="form-control mb-4">
-        <option selected>Diamond</option>
-        <option>Silver</option>
-        <option>Member</option>
-      </select>
+        <div class="form-group mb-4">
+          <div class="form-outline">
+            <input type="date" id="dayOfBirth" class="form-control" formControlName="dateOfBirth"/>
+            <label class="form-label" for="dayOfBirth">Ngày sinh<span class="text-danger">(*)</span></label>
+          </div>
+          <div *ngIf="!dateOfBirth.valid &&(dateOfBirth.dirty || dateOfBirth.touched)">
+            <small class="text-danger" [hidden]="!dateOfBirth.errors.required">
+              ngày sinh không được để trống
+            </small>
+            <small class="text-danger" [hidden]="!dateOfBirth.errors.pattern">
+              ngày sinh sai định dạng
+            </small>
+          </div>
 
-    </div>
-    <div class="modal-footer">
-      <!--            <a th:href="@{/customer}" type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Đóng</a>-->
-      <input type="submit" class="btn btn-primary" value="Thêm mới"/>
+        </div>
+
+        <div class="form-group mb-4">
+          <div class="form-outline">
+            <input type="text" id="idCard" class="form-control" formControlName="idCard"/>
+            <label class="form-label" for="idCard">Số CMND<span class="text-danger">(*)</span></label>
+          </div>
+          <div *ngIf="!idCard.valid &&(idCard.dirty || idCard.touched)">
+            <small class="text-danger" [hidden]="!idCard.errors.required">
+              CMND  không được để trống
+            </small>
+            <small class="text-danger" [hidden]="!idCard.errors.pattern">
+              CMND ko đúng định dạng. định dạng đúng: 123456789
+            </small>
+          </div>
+        </div>
+        <div class="form-group mb-4">
+          <div class="form-outline">
+            <input type="text" id="phoneNumber" class="form-control" formControlName="phone"/>
+            <label class="form-label" for="phoneNumber">Số điện thoại<span class="text-danger">(*)</span></label>
+          </div>
+          <div *ngIf="!phone.valid &&(phone.dirty || phone.touched)">
+            <small class="text-danger" [hidden]="!phone.errors.required">
+              Số điện thoại  không được để trống
+            </small>
+            <small class="text-danger" [hidden]="!phone.errors.pattern">
+              số điện thoại ko đúng định dạng. định dạng đúng: bắt đầu là 0 hoặc có 9 số
+            </small>
+          </div>
+        </div>
+        <div class="form-group mb-4">
+          <div class="form-outline">
+            <input type="text" id="email" class="form-control" formControlName="email"/>
+            <label class="form-label" for="email">Email</label>
+          </div>
+          <div *ngIf="!email.valid &&(email.dirty || email.touched)">
+            <small class="text-danger" [hidden]="!email.errors.required">
+              email khống được để trống  không được để trống
+            </small>
+            <small class="text-danger" [hidden]="!email.errors.pattern">
+              email không đúng định dạng
+            </small>
+          </div>
+        </div>
+        <div class="form-group mb-4">
+          <div class="form-outline">
+            <input type="text" id="address" class="form-control" formControlName="address"/>
+            <label class="form-label" for="address">Địa chỉ</label>
+          </div>
+          <div *ngIf="!address.valid &&(address.dirty || address.touched)">
+            <small class="text-danger" [hidden]="!address.errors.required">
+              địa không được để trống  không được để trống
+            </small>
+          </div>
+        </div>
+        <label class="form-label" for="customerType">Loại</label>
+        <select id="customerType" class="form-control mb-4" formControlName="typeCustomer">
+          <option *ngFor="let a of typeCustomer" [ngValue]="a">
+            {{a.name}}
+          </option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <input [disabled]="!editCustomer.valid" type="submit" class="btn btn-primary" value="Thêm mới"/>
+      </div>
     </div>
   </form>
 </div>

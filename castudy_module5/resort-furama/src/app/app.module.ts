@@ -3,15 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import {HomeServiceComponent} from "./home-service/home-service.component";
-import { EditFacilityComponent } from './edit-facility/edit-facility.component';
+import { NavbarComponent } from './homePage/navbar/navbar.component';
+import { HeaderComponent } from './homePage/header/header.component';
+import { FooterComponent } from './homePage/footer/footer.component';
+import {HomeServiceComponent} from "./homePage/home-service/home-service.component";
+import { EditFacilityComponent } from './facility/edit-facility/edit-facility.component';
 import {ListContractComponent} from "./contract/list-contract/list-contract.component";
 import {CreateContractComponent} from "./contract/create-contract/create-contract.component";
 import {ListComponent} from "./customer/list/list.component";
 import {EditCustomerComponent} from "./customer/edit-customer/edit-customer.component";
+import {CreateCustomerComponent} from "./customer/create-customer/create-customer.component";
+import { ReactiveFormsModule} from "@angular/forms";
+import { CreateVillaComponent } from './facility/create-villa/create-villa.component';
+import { CreateHouseComponent } from './facility/create-house/create-house.component';
+import { CreateRoomComponent } from './facility/create-room/create-room.component';
+
 
 @NgModule({
   declarations: [
@@ -24,12 +30,16 @@ import {EditCustomerComponent} from "./customer/edit-customer/edit-customer.comp
     ListContractComponent,
     CreateContractComponent,
     ListComponent,
-    EditCustomerComponent
+    EditCustomerComponent,
+    CreateCustomerComponent,
+    CreateVillaComponent,
+    CreateHouseComponent,
+    CreateRoomComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   exports: [

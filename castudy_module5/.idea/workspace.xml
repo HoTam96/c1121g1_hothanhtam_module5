@@ -2,21 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a400c92-b25a-4602-b76c-6dded730c48a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ss6_angular_form/thuc_hanh/.idea/thuc_hanh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss6_angular_form/bai_tap/.idea/bai_tap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss6_angular_form/bai_tap/form-singin/src/app/create-form-singin/IStudent.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_service_and_router/thuc_hanh/.idea/thuc_hanh.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contract/contractList.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contract/createContract.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/CustomerList.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/Facility.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss5_components_interaction/bai_tap/angular-vote/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss5_components_interaction/bai_tap/angular-vote/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss5_components_interaction/bai_tap/angular-vote/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss5_components_interaction/bai_tap/angular-vote/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss5_components_interaction/bai_tap/angular-vote/src/app/rating-init.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss5_components_interaction/bai_tap/angular-vote/src/app/rating-init.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss5_components_interaction/bai_tap/angular-vote/src/app/votes/votes.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ss5_components_interaction/bai_tap/angular-vote/src/app/votes/votes.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss5_components_interaction/bai_tap/angular-vote/src/app/votes/votes.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss5_components_interaction/bai_tap/angular-vote/src/app/votes/votes.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss5_components_interaction/bai_tap/angular-vote/src/app/votes/votes.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss5_components_interaction/bai_tap/angular-vote/src/app/votes/votes.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/contract/create-contract/create-contract.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/create-facility/create-facility.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/facility/create-facility/create-facility.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/create-facility/create-facility.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/facility/create-facility/create-facility.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/create-facility/create-facility.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/facility/create-facility/create-facility.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/create-facility/create-facility.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/facility/create-facility/create-facility.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/customer/create-customer/create-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/customer/create-customer/create-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/customer/create-customer/create-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/customer/create-customer/create-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/customer/create-customer/create-customer.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/customer/edit-customer/edit-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/customer/edit-customer/edit-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/customer/edit-customer/edit-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/customer/edit-customer/edit-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/customer/edit-customer/edit-customer.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/customer/list/list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/customer/list/list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/edit-facility/edit-facility.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/facility/edit-facility/edit-facility.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/edit-facility/edit-facility.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/facility/edit-facility/edit-facility.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/edit-facility/edit-facility.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/facility/edit-facility/edit-facility.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/edit-facility/edit-facility.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/facility/edit-facility/edit-facility.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/footer/footer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/footer/footer.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/footer/footer.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/footer/footer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/header/header.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/header/header.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/home-service/home-service.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/home-service/home-service.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/home-service/home-service.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/home-service/home-service.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/home-service/home-service.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/home-service/home-service.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/home-service/home-service.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/home-service/home-service.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/navbar/navbar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/navbar/navbar.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/navbar/navbar.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/navbar/navbar.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/homePage/navbar/navbar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,13 +83,15 @@
     <property name="ts.external.directory.path" value="D:\module5\castudy_module5\resort-furama\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\module5\castudy_module5\customer" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\module5\castudy_module5\resort-furama\src\app\homePage" />
+      <recent name="D:\module5\castudy_module5\resort-furama\src\app\facility" />
       <recent name="D:\module5\castudy_module5\resort-furama\src\app" />
       <recent name="D:\module5\castudy_module5\resort-furama\src\app\furama-management" />
       <recent name="D:\module5\castudy_module5\resort-furama\src\app\contract" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\module5\castudy_module5\customer" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -98,6 +124,10 @@
       <workItem from="1652167715950" duration="32000" />
       <workItem from="1652226146189" duration="1106000" />
       <workItem from="1652232041515" duration="5439000" />
+      <workItem from="1652330423553" duration="179000" />
+      <workItem from="1652337883740" duration="17783000" />
+      <workItem from="1652388389193" duration="4340000" />
+      <workItem from="1652403405865" duration="637000" />
     </task>
     <servers />
   </component>
@@ -116,10 +146,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816@0.0.1536.816" timestamp="1652154893548" />
-    <state x="549" y="164" key="FileChooserDialogImpl" timestamp="1652259659751">
+    <state x="549" y="164" key="FileChooserDialogImpl" timestamp="1652391832315">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="164" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1652259659751" />
+    <state x="549" y="164" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1652391832315" />
     <state x="277" y="52" key="SettingsEditor" timestamp="1652048480552">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

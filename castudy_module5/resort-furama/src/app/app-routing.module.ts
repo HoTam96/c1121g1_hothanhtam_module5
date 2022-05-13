@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {HomeServiceComponent} from "./home-service/home-service.component";
-import {EditFacilityComponent} from "./edit-facility/edit-facility.component";
+import {HomeServiceComponent} from "./homePage/home-service/home-service.component";
+import {EditFacilityComponent} from "./facility/edit-facility/edit-facility.component";
 import {ListContractComponent} from "./contract/list-contract/list-contract.component";
 import {CreateContractComponent} from "./contract/create-contract/create-contract.component";
 import {ListComponent} from "./customer/list/list.component";
 import {CreateCustomerComponent} from "./customer/create-customer/create-customer.component";
 import {EditCustomerComponent} from "./customer/edit-customer/edit-customer.component";
+
 
 
 const routes: Routes = [

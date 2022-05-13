@@ -1,0 +1,33 @@
+<h1>đăng nhập</h1>
+<form [formGroup]="loginForm" (ngSubmit)="onsubmit()">
+  <div>
+    <label>email</label>
+    <input name="email" type="text" formControlName="email">
+    <div *ngIf="email.invalid && (email.dirty || email.touched)">
+<!--    <div *ngIf="loginForm.get('email').invalid&&(loginForm.controls.email.touched||loginForm.controls.email.dirty)">-->
+      <small [hidden]="email.errors.required">
+        email ko được để trống
+      </small>
+      <small [hidden]="email.errors.email">
+        email ko đúng định dạng
+      </small>
+    </div>
+  </div>
+  <div>
+    <label>pass Word</label>
+    <input type="password" formControlName="password">
+    <div *ngIf="!password.valid&&(password.dirty || password.touched)">
+      <small [hidden]="password.errors.required">
+        password ko được để trống
+      </small>
+      <small [hidden]="password.errors.minlength">
+        email phải có ít nhất 6 kí tự
+      </small>
+    </div>
+  </div>
+  <div>
+    <button [disabled]="!loginForm.valid" type="submit">Submit</button>
+  </div>
+</form>
+
+

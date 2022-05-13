@@ -1,0 +1,85 @@
+<h2>form đăng kí</h2>
+<form [formGroup]="formSingin" (ngSubmit)="onsubmit()">
+  <p>
+    <label>email</label>
+    <input name="email" type="text" formControlName="email">
+    <small *ngIf="!email.valid &&(email.dirty || email.touched)">
+      <small style="color: red"> mail ko được để trống
+      </small>
+    </small>
+
+    <label>pass word</label>
+    <input name="passWord" type="password" formControlName="passWord">
+    <small *ngIf="!passWord.valid &&(passWord.dirty || passWord.touched)">
+      <small style="color: red" [hidden]="!passWord.errors.required">
+        mật ko được để trống
+      </small>
+      <small style="color: red" [hidden]="!passWord.errors.minlength">
+        mật khẩu phải lớn hơn 6 kí tự
+      </small>
+
+    </small>
+  </p>
+
+  <p>
+    <label>confirm pass work</label>
+    <input name="confirmPassWord" type="password" formControlName="confirmPassWord" (change)="checkPassWork()">
+    <small *ngIf="!confirmPassWord.valid &&(confirmPassWord.dirty || confirmPassWord.touched)">
+      <small style="color: red" [hidden]="!confirmPassWord.errors.required">
+        mật ko được để trống
+      </small>
+      <small style="color: red" [hidden]="!confirmPassWord.errors.notMatch">
+        mật khẩu không khớp
+      </small>
+      <small style="color: forestgreen" [hidden]="!confirmPassWord.errors.Match">
+        mật khẩu đã khớp
+      </small>
+    </small>
+
+    <label for="country">đất nước </label>
+    <select id="country" name="country" formControlName="country">
+      <option [ngValue]="a.name"*ngFor="let a of countryList">
+        <h4>{{a.name}}</h4>
+      </option>
+    </select>
+  </p>
+  <p>
+    <label>tuổi</label>
+    <input name="age" type="text" formControlName="age">
+  </p>
+  <p>
+    <label>giới tính</label>
+    <br>
+    <label>nam</label> <input name="gender" type="radio" value="nam" formControlName="gender">
+    <label>nữ</label> <input name="gender" type="radio" value="nữ" formControlName="gender">
+    <label>bê đê</label> <input name="gender" type="radio" value="bê đê" formControlName="gender">
+  </p>
+  <p>
+    <label>phone</label>
+    <input name="phone" type="text" formControlName="phone">
+  </p>
+  <p>
+    <button type="submit">Submit</button>
+  </p>
+
+</form>
+
+<h1>danh sách khách hàng tiềm năng</h1>
+<table>
+
+  <th>email</th>
+  <th>tuổi</th>
+  <th>giới tính</th>
+  <th>đất nước</th>
+  <th>số điện thoại</th>
+  <tr *ngFor="let b of student">
+    <td>{{b.email}}</td>
+    <td>{{b.age}}</td>
+    <td>{{b.gender}}</td>
+    <td>{{b.country}}</td>
+    <td>{{b.phone}}</td>
+
+  </tr>
+</table>
+
+
