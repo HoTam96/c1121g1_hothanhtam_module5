@@ -1,0 +1,14 @@
+<h1>từ điển anh- việt</h1>
+
+<table border="1px" style="solid-color: black" >
+  <tr>
+    <th>tiếng anh</th>
+    <th>tiếng việt</th>
+    <th>chi tiết</th>
+  </tr>
+  <tr *ngFor="let a of words">
+    <td>{{a.word}}</td>
+  <td>{{a.mean}}</td>
+  <td><a [routerLink]="['/detail/',a.id]">chi tiết</a></td>
+  </tr>
+</table>

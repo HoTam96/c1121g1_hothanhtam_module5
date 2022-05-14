@@ -7,6 +7,9 @@ import {CreateContractComponent} from "./contract/create-contract/create-contrac
 import {ListComponent} from "./customer/list/list.component";
 import {CreateCustomerComponent} from "./customer/create-customer/create-customer.component";
 import {EditCustomerComponent} from "./customer/edit-customer/edit-customer.component";
+import {CreateVillaComponent} from "./facility/create-villa/create-villa.component";
+import {CreateHouseComponent} from "./facility/create-house/create-house.component";
+import {CreateRoomComponent} from "./facility/create-room/create-room.component";
 
 
 
@@ -17,7 +20,10 @@ const routes: Routes = [
   {path: 'create-contract',component: CreateContractComponent},
   {path: 'customer-list',component: ListComponent},
   {path: 'create-customer',component: CreateCustomerComponent},
-  {path: 'edit-customer',component: EditCustomerComponent}
+  {path: 'edit-customer',component: EditCustomerComponent},
+  {path: 'create-villa',component: CreateVillaComponent},
+  {path: 'create-house',component: CreateHouseComponent},
+  {path: 'create-room',component: CreateRoomComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

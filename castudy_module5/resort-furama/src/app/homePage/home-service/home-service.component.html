@@ -284,3 +284,33 @@
 
 
 </div>
+
+<div
+  class="modal fade"
+  id="callModal"
+  data-mdb-backdrop="static"
+  data-mdb-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">CHỌN LOẠI DỊCH VỤ </h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-footer">
+        <!--                <button type="button"  data-mdb-dismiss="modal">Close</button>-->
+        <!--                <button type="button" class="btn btn-primary" id="delete_customer_id">ok</button>-->
+        <button  class="btn btn-secondary">
+          <a [routerLink]="['/create-villa']" href="#">Villa</a></button>
+        <button  class="btn btn-secondary">
+          <a [routerLink]="['/create-house']" href="#">house</a></button>
+        <button class="btn btn-secondary">
+          <a  [routerLink]="['/create-room']"href="#"  >room</a></button>
+      </div>
+    </div>
+  </div>
+</div>
