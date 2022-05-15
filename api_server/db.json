@@ -1,0 +1,82 @@
+{
+  "product": [
+    {
+      "id": 3,
+      "name": "IPhone 14",
+      "price": 2600000,
+      "description": "New",
+      "category": {
+        "id": 4,
+        "name": "chán chả buồn nói"
+      }
+    },
+    {
+      "id": 4,
+      "name": "IPhone 15",
+      "price": 2700000,
+      "description": "old",
+      "category": {
+        "id": 4,
+        "name": "chán chả buồn nói"
+      }
+    },
+    {
+      "id": 5,
+      "name": "IPhone 16",
+      "price": 2800000,
+      "description": "New",
+      "category": {
+        "id": 2,
+        "name": "điện tử"
+      }
+    },
+    {
+      "id": 111,
+      "name": "ádsadsa",
+      "price": 132456789,
+      "description": "dàghj",
+      "category": {
+        "id": 1,
+        "name": "smart phone"
+      }
+    },
+    {
+      "id": 112,
+      "name": "hòi thanh tâm",
+      "price": 12423544,
+      "description": "dsfgh",
+      "category": {
+        "id": 2,
+        "name": "điện tử"
+      }
+    },
+    {
+      "id": 789,
+      "name": "hồ thanh tâm",
+      "price": 1212345,
+      "description": "ok ",
+      "category": {
+        "id": 2,
+        "name": "điện tử"
+      }
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "smart phone"
+    },
+    {
+      "id": 2,
+      "name": "điện tử"
+    },
+    {
+      "id": 3,
+      "name": "đồ dân dụng"
+    },
+    {
+      "id": 4,
+      "name": "chán chả buồn nói"
+    }
+  ]
+}

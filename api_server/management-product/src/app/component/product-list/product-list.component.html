@@ -1,0 +1,35 @@
+<h1>Danh sách sản phẩm</h1>
+<input placeholder="tìm kiếm" type text (ngModelChange)="searchByName()" [(ngModel)]="searchName">
+<button style="margin-bottom: 15px" (click)="searchByName()">tìm kiếm</button><br>
+<button><a [routerLink]="['/create-product']">thêm mới sản phẩm</a></button>
+<table>
+  <tr>
+    <td>STT</td>
+    <td>Tên</td>
+    <td>Giá</td>
+    <td>Mô tả</td>
+    <td>danh mục</td>
+    <td>eidt</td>
+    <td>xóa</td>
+  </tr>
+  <tr *ngFor="let product of products | paginate : {itemsPerPage : 2 , currentPage :p}; index as i " >
+    <td>{{i + 1}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.price}}</td>
+    <td>{{product.description}}</td>
+    <td>{{product.category.name}}</td>
+        <td>
+          <button><a [routerLink]="['/edit-product/',product.id]">edit</a></button>
+        </td>
+    <td>
+      <button><a (click)="openDiaLogDelete(product.id)">detete</a></button>
+    </td>
+<!--    <td>-->
+<!--      <button><a [routerLink]="['/delete-product/',product.id]">xóa</a></button>-->
+<!--    </td>-->
+  </tr>
+</table>
+<pagination-controls (pageChange)="p=$event"></pagination-controls>
+
+
+
