@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-create-contract',
@@ -6,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-contract.component.css']
 })
 export class CreateContractComponent implements OnInit {
+  contractForm: FormGroup;
 
-  constructor() { }
+
+  constructor() {
+    this.contractForm = new FormGroup({
+
+    })
+  }
 
   ngOnInit(): void {
   }
