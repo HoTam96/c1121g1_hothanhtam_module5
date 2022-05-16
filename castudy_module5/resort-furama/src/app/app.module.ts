@@ -1,22 +1,20 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { NavbarComponent } from './homePage/navbar/navbar.component';
-import { HeaderComponent } from './homePage/header/header.component';
-import { FooterComponent } from './homePage/footer/footer.component';
-import {HomeServiceComponent} from "./homePage/home-service/home-service.component";
-import { EditFacilityComponent } from './facility/edit-facility/edit-facility.component';
-import {ListContractComponent} from "./contract/list-contract/list-contract.component";
-import {CreateContractComponent} from "./contract/create-contract/create-contract.component";
-import {ListComponent} from "./customer/list/list.component";
-import {EditCustomerComponent} from "./customer/edit-customer/edit-customer.component";
-import {CreateCustomerComponent} from "./customer/create-customer/create-customer.component";
-import { ReactiveFormsModule} from "@angular/forms";
-import { CreateVillaComponent } from './facility/create-villa/create-villa.component';
-import { CreateHouseComponent } from './facility/create-house/create-house.component';
-import { CreateRoomComponent } from './facility/create-room/create-room.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {NavbarComponent} from './conponent/homePage/navbar/navbar.component';
+import {HeaderComponent} from './conponent/homePage/header/header.component';
+import {FooterComponent} from './conponent/homePage/footer/footer.component';
+import {HomeServiceComponent} from "./conponent/homePage/home-service/home-service.component";
+import {ListContractComponent} from "./conponent/contract/list-contract/list-contract.component";
+import {CreateContractComponent} from "./conponent/contract/create-contract/create-contract.component";
+import {ListComponent} from "./conponent/customer/list/list.component";
+import {EditCustomerComponent} from "./conponent/customer/edit-customer/edit-customer.component";
+import {CreateCustomerComponent} from "./conponent/customer/create-customer/create-customer.component";
+import {ReactiveFormsModule} from "@angular/forms";
+
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -26,20 +24,19 @@ import { CreateRoomComponent } from './facility/create-room/create-room.componen
     HeaderComponent,
     FooterComponent,
     HomeServiceComponent,
-    EditFacilityComponent,
     ListContractComponent,
     CreateContractComponent,
     ListComponent,
     EditCustomerComponent,
-    CreateCustomerComponent,
-    CreateVillaComponent,
-    CreateHouseComponent,
-    CreateRoomComponent,
+    CreateCustomerComponent
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   exports: [
@@ -48,4 +45,5 @@ import { CreateRoomComponent } from './facility/create-room/create-room.componen
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

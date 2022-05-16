@@ -2,8 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {ServiceProductService} from "../../service/service-product.service";
 import {Iproduct} from "../../model/iproduct";
 import {HttpErrorResponse} from "@angular/common/http";
-// import {CategorysService} from "../../service/categorys.service";
-// import {ICategory} from "../../model/ICategory";
 import {MatDialog} from "@angular/material/dialog";
 import {ProductDeleteComponent} from "../product-delete/product-delete.component";
 

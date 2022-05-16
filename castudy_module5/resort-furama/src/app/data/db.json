@@ -1,0 +1,126 @@
+{
+  "service": [
+    {
+      "id": 1,
+      "serviceName": "villa vip pro siêu câp",
+      "title": "PHÒNG RẤT ĐẸP . MẠI DÔ MẠI DÔ 100K 1 ĐẺM. AI THUÊ THÌ CÒN. KO THUÊ CŨNG CÒN",
+      "serviceType": {
+        "id": 2,
+        "name": "house"
+      },
+      "price": 20000000,
+      "area": 800,
+      "image": "https://acchome.com.vn/wp-content/uploads/2022/04/thiet-ke-biet-thu-cao-cap-11.jpg"
+    },
+    {
+      "id": 2,
+      "serviceName": "villa vip",
+      "title": "PHÒNG RẤT ĐẸP . MẠI DÔ MẠI DÔ 100K 1 ĐẺM. AI THUÊ THÌ CÒN. KO THUÊ CŨNG CÒN",
+      "serviceType": {
+        "id": 1,
+        "name": "villa"
+      },
+      "price": 20000000,
+      "area": 500,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO-GjWfVk615FJcmIi3VGGkdwH9nPj9WO8KQ&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "serviceName": "villa vip",
+      "title": "PHÒNG RẤT ĐẸP . MẠI DÔ MẠI DÔ 100K 1 ĐẺM. AI THUÊ THÌ CÒN. KO THUÊ CŨNG CÒN",
+      "serviceType": {
+        "id": 1,
+        "name": "villa"
+      },
+      "price": 20000000,
+      "area": 500,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4tg3AcHj-OMImn4tPhGuWrghzgQCVEsM_Q&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "serviceName": "villa vip",
+      "title": "PHÒNG RẤT ĐẸP . MẠI DÔ MẠI DÔ 100K 1 ĐẺM. AI THUÊ THÌ CÒN. KO THUÊ CŨNG CÒN",
+      "serviceType": {
+        "id": 1,
+        "name": "villa"
+      },
+      "price": 20000000,
+      "area": 500,
+      "image": "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2021/08/download-23.jpg"
+    },
+    {
+      "id": 5,
+      "serviceName": "villa vip",
+      "title": "PHÒNG RẤT ĐẸP . MẠI DÔ MẠI DÔ 100K 1 ĐẺM. AI THUÊ THÌ CÒN. KO THUÊ CŨNG CÒN",
+      "serviceType": {
+        "id": 2,
+        "name": "house"
+      },
+      "price": 20000000,
+      "area": 500,
+      "image": "https://thoitrangwiki.com/wp-content/uploads/2019/05/mau-nha-pho-dep-o-quang-binh-1-12-e1556817765445.jpg"
+    },
+    {
+      "id": 6,
+      "serviceName": "villa vip",
+      "title": "PHÒNG RẤT ĐẸP . MẠI DÔ MẠI DÔ 100K 1 ĐẺM. AI THUÊ THÌ CÒN. KO THUÊ CŨNG CÒN",
+      "serviceType": {
+        "id": 3,
+        "name": "room"
+      },
+      "price": 20000000,
+      "area": 500,
+      "image": "https://kdhl.vn/wp-content/uploads/2021/06/THIET-KE-BIET-THU-MAI-THAI-9.jpg"
+    },
+    {
+      "id": 7,
+      "serviceName": "villa vip",
+      "title": "PHÒNG RẤT ĐẸP . MẠI DÔ MẠI DÔ 100K 1 ĐẺM. AI THUÊ THÌ CÒN. KO THUÊ CŨNG CÒN",
+      "serviceType": {
+        "id": 1,
+        "name": "villa"
+      },
+      "price": 20000000,
+      "area": 500,
+      "image": "https://noithatmanhhe.vn/media/22958/15-noi-that-phong-cngu-con-trai-noi-that-manh-he.jpg"
+    },
+    {
+      "id": 8,
+      "serviceName": "villa vip",
+      "title": "PHÒNG RẤT ĐẸP . MẠI DÔ MẠI DÔ 100K 1 ĐẺM. AI THUÊ THÌ CÒN. KO THUÊ CŨNG CÒN",
+      "serviceType": {
+        "id": 2,
+        "name": "house"
+      },
+      "price": 20000000,
+      "area": 500,
+      "image": "https://cdn01.dienmaycholon.vn/filewebdmclnew/public/picture/experience/article_1992.jpg"
+    },
+    {
+      "id": 9,
+      "serviceName": "villa vip",
+      "title": "PHÒNG RẤT ĐẸP . MẠI DÔ MẠI DÔ 100K 1 ĐẺM. AI THUÊ THÌ CÒN. KO THUÊ CŨNG CÒN",
+      "serviceType": {
+        "id": 3,
+        "name": "room"
+      },
+      "price": 20000000,
+      "area": 500,
+      "image": "https://gotrangtri.vn/wp-content/uploads/2020/03/bia-6.jpg"
+    }
+  ],
+  "serviceType": [
+    {
+      "id": 1,
+      "name": "villa"
+    },
+    {
+      "id": 2,
+      "name": "house"
+    },
+    {
+      "id": 3,
+      "name": "room"
+    }
+  ]
+}

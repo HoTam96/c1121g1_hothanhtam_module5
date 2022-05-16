@@ -32,7 +32,7 @@ export class ProductCreateComponent implements OnInit {
 
   submit() {
     this.productService.save(this.productForm.value).subscribe((res: Iproduct) => {
-      this.router.navigate(['/product-list'])
+      this.router.navigate(['/product-list']);
       this.snackBar.open('đã thêm thành công', 'ok');
     });
   }
@@ -48,8 +48,7 @@ export class ProductCreateComponent implements OnInit {
 
   promise1 = new Promise((resolve, reject) => {
     this.category.getAllCategory().subscribe((res: ICategory[]) => {
-      this.categoryList = res;
-      console.log('haha')
+      this.categoryList = res
     }, reject);
   });
 
