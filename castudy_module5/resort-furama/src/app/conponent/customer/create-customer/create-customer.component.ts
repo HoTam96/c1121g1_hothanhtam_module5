@@ -4,6 +4,7 @@ import {ICustomerType} from "../../../model/ICustomerType";
 import {CustomerServiceService} from "../../../service/customer-service.service";
 import {HttpErrorResponse} from "@angular/common/http";
 import {Router} from "@angular/router";
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
   selector: 'app-create-customer',
@@ -14,7 +15,7 @@ export class CreateCustomerComponent implements OnInit {
   createCustomer: FormGroup;
   customerType: ICustomerType[] = [];
 
-  constructor(private customerService: CustomerServiceService, private router: Router) {
+  constructor(private customerService: CustomerServiceService, private router: Router, private snackBar: MatSnackBar) {
     this.customerService.getAllCustomerType().subscribe((res: ICustomerType[]) => {
       this.customerType = res;
       this.createCustomer.controls["customerType"].setValue(this.customerType[0]);
@@ -78,7 +79,17 @@ export class CreateCustomerComponent implements OnInit {
   onsubmit() {
     console.log(this.createCustomer.value);
     this.customerService.addCustomer(this.createCustomer.value).subscribe((res: void) => {
-      this.router.navigate(['/customer-list']);
+
+      const container = document.getElementById('main-container');
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.style.display = 'none';
+      button.setAttribute('data-mdb-toggle', 'modal');
+      button.setAttribute('data-mdb-target', '#successModal');
+      container.appendChild(button);
+      button.click();
+      // this.router.navigate(['/customer-list']);
+      // this.snackBar.open('đã thêm thành công', 'ok');
 
     }, (error: HttpErrorResponse) => {
       alert('ngu thì cút')

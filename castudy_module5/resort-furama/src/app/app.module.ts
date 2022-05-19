@@ -15,6 +15,11 @@ import {CreateCustomerComponent} from "./conponent/customer/create-customer/crea
 import {ReactiveFormsModule} from "@angular/forms";
 
 import {HttpClientModule} from "@angular/common/http";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {NgxPaginationModule} from "ngx-pagination";
+
 
 
 @NgModule({
@@ -28,7 +33,8 @@ import {HttpClientModule} from "@angular/common/http";
     CreateContractComponent,
     ListComponent,
     EditCustomerComponent,
-    CreateCustomerComponent
+    CreateCustomerComponent,
+
 
 
   ],
@@ -36,7 +42,11 @@ import {HttpClientModule} from "@angular/common/http";
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatSnackBarModule,
+    MatDialogModule,
+    NgxPaginationModule
   ],
   providers: [],
   exports: [

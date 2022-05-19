@@ -2,9 +2,9 @@
   "product": [
     {
       "id": 3,
-      "name": "IPhone 14",
+      "name": "IPhone tuấn1",
       "price": 2600000,
-      "description": "New",
+      "description": "new be",
       "category": {
         "id": 4,
         "name": "chán chả buồn nói"
@@ -12,8 +12,8 @@
     },
     {
       "id": 4,
-      "name": "IPhone 15",
-      "price": 2700000,
+      "name": "IPhone 36",
+      "price": "2600000",
       "description": "old",
       "category": {
         "id": 2,
@@ -21,40 +21,30 @@
       }
     },
     {
-      "id": 5,
-      "name": "IPhone 16",
-      "price": 2800000,
-      "description": "New",
+      "id": "223",
+      "name": "winner",
+      "price": "600000",
+      "description": "ok lắm",
+      "category": {
+        "id": 3,
+        "name": "đồ dân dụng"
+      }
+    },
+    {
+      "id": "122",
+      "name": "tam 88",
+      "price": "600000",
+      "description": "mượt mà",
       "category": {
         "id": 2,
         "name": "điện tử"
       }
     },
     {
-      "id": 111,
-      "name": "ádsadsa",
-      "price": 132456789,
-      "description": "dàghj",
-      "category": {
-        "id": 1,
-        "name": "smart phone"
-      }
-    },
-    {
-      "id": 112,
-      "name": "hòi thanh tâm",
-      "price": 12423544,
-      "description": "dsfgh",
-      "category": {
-        "id": 2,
-        "name": "điện tử"
-      }
-    },
-    {
-      "id": 789,
+      "id": "56756",
       "name": "hồ thanh tâm",
-      "price": 1212345,
-      "description": "ok ",
+      "price": "600000",
+      "description": "xe tre trau",
       "category": {
         "id": 2,
         "name": "điện tử"
@@ -77,6 +67,169 @@
     {
       "id": 4,
       "name": "chán chả buồn nói"
+    }
+  ],
+  "browBook": [
+    {
+      "id": 1,
+      "bookId": {
+        "id": 1,
+        "bookCode": "B-001",
+        "bookName": "ngày giông mưa rào",
+        "author": "ngô tất tố",
+        "description": "sách sản năm 2001",
+        "quality": 5
+      },
+      "browCode": "B-001",
+      "studentId": {
+        "id": 1,
+        "studentCode": "ST-001",
+        "name": "thanh tâm",
+        "class": "c1121g1"
+      },
+      "status": false,
+      "startDate": "2022-01-02",
+      "endDate": "2022-01-07"
+    },
+    {
+      "id": 2,
+      "bookId": {
+        "id": 2,
+        "bookCode": "B-002",
+        "bookName": "ngày giông bão",
+        "author": "ngô tất tố",
+        "description": "sách sản năm 2001",
+        "quality": 6
+      },
+      "browCode": "B-002",
+      "studentId": {
+        "id": 2,
+        "studentCode": "ST-002",
+        "name": "thanh tú",
+        "class": "c1121g1"
+      },
+      "status": false,
+      "startDate": "2022-01-04",
+      "endDate": "2022-01-07"
+    },
+    {
+      "id": 3,
+      "bookId": {
+        "id": 3,
+        "bookCode": "B-003",
+        "bookName": "ngày giông bão",
+        "author": "ngô tất tố",
+        "description": "sách sản năm 2001",
+        "quality": 5
+      },
+      "browCode": "B-003",
+      "studentId": {
+        "id": 3,
+        "studentCode": "ST-003",
+        "name": "thanh quang",
+        "class": "c1121g1"
+      },
+      "status": false,
+      "startDate": "2022-01-03",
+      "endDate": "2022-01-07"
+    },
+
+
+
+    {
+      "browCode": "B-145",
+      "status": false,
+      "startDate": "2022-05-17",
+      "endDate": "2022-05-14",
+      "bookId": {
+        "id": 4,
+        "bookCode": "B-004",
+        "bookName": "tuyên ngon độc lập",
+        "author": "hồ chí minh",
+        "description": "sách sản năm 2001",
+        "quality": 2
+      },
+      "studentId": {
+        "id": 1,
+        "studentCode": "ST-001",
+        "name": "thanh tâm",
+        "class": "c1121g1"
+      },
+      "id": 29
+    }
+  ],
+  "book": [
+    {
+      "id": 1,
+      "bookCode": "B-001",
+      "bookName": "ngày giông bão",
+      "author": "ngô tất tố",
+      "description": "sách sản năm 2001",
+      "quality": 5
+    },
+    {
+      "id": 2,
+      "bookCode": "B-002",
+      "bookName": "tắt đèn",
+      "author": "ngô tất tố",
+      "description": "sách sản năm 2001",
+      "quality": 3
+    },
+    {
+      "id": 3,
+      "bookCode": "B-003",
+      "bookName": "chị dậu",
+      "author": "ngô tất tố",
+      "description": "sách sản năm 2001",
+      "quality": 7
+    },
+    {
+      "id": 4,
+      "bookCode": "B-004",
+      "bookName": "tuyên ngon độc lập",
+      "author": "hồ chí minh",
+      "description": "sách sản năm 2001",
+      "quality": 2
+    },
+    {
+      "id": 5,
+      "bookCode": "B-005",
+      "bookName": "ngắm trăng",
+      "author": "ngô tất tố",
+      "description": "sách sản năm 2001",
+      "quality": 0
+    }
+  ],
+  "student": [
+    {
+      "id": 1,
+      "studentCode": "ST-001",
+      "name": "thanh tâm",
+      "class": "c1121g1"
+    },
+    {
+      "id": 2,
+      "studentCode": "ST-002",
+      "name": "thanh tú",
+      "class": "c1121g1"
+    },
+    {
+      "id": 3,
+      "studentCode": "ST-003",
+      "name": "thanh quang",
+      "class": "c1121g1"
+    },
+    {
+      "id": 4,
+      "studentCode": "ST-004",
+      "name": "thanh thành",
+      "class": "c1121g1"
+    },
+    {
+      "id": 5,
+      "studentCode": "ST-005",
+      "name": "thanh trung",
+      "class": "c1121g1"
     }
   ]
 }

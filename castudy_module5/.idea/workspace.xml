@@ -2,10 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a400c92-b25a-4602-b76c-6dded730c48a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resort-furama/src/app/model/Icontract.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8_dependency/.idea/ss8_dependency.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8_dependency/bai_tap/.idea/bai_tap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8_dependency/thuc_hanh/.idea/thuc_hanh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8_dependency/thuc_hanh/angular-gallery-app/src/app/image-gallery/token.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_thu_mode5/.idea/thi_thu_mode5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/model/IBook.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/model/IBrowBook.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/model/IStudent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-create/product-create.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-create/product-create.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-create/product-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-create/product-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-create/product-create.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-create/product-create.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-create/product-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-create/product-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-delete/product-delete.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-delete/product-delete.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-delete/product-delete.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-delete/product-delete.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-delete/product-delete.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-delete/product-delete.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-delete/product-delete.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-delete/product-delete.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-edit/product-edit.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-edit/product-edit.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-edit/product-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-edit/product-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-edit/product-edit.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-edit/product-edit.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-edit/product-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-edit/product-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-list/product-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-list/product-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-list/product-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-list/product-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-list/product-list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-list/product-list.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/component/product-list/product-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-list/product-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/service/service-product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/service/service-product.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/conponent/contract/create-contract/create-contract.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/conponent/contract/create-contract/create-contract.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/conponent/contract/create-contract/create-contract.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/conponent/contract/create-contract/create-contract.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/conponent/customer/create-customer/create-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/conponent/customer/create-customer/create-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/conponent/customer/create-customer/create-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/conponent/customer/create-customer/create-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/conponent/customer/list/list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/conponent/customer/list/list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/conponent/customer/list/list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/conponent/customer/list/list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/conponent/homePage/home-service/home-service.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/conponent/homePage/home-service/home-service.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/conponent/homePage/home-service/home-service.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/conponent/homePage/home-service/home-service.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/conponent/homePage/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/conponent/homePage/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/app/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resort-furama/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/resort-furama/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +145,16 @@
       <workItem from="1652682905604" duration="9414000" />
       <workItem from="1652694082225" duration="14963000" />
       <workItem from="1652710325222" duration="324000" />
-      <workItem from="1652733855608" duration="3345000" />
+      <workItem from="1652733855608" duration="4171000" />
+      <workItem from="1652757828524" duration="1147000" />
+      <workItem from="1652759053755" duration="1994000" />
+      <workItem from="1652767426530" duration="3049000" />
+      <workItem from="1652808943526" duration="6000" />
+      <workItem from="1652808958219" duration="7000" />
+      <workItem from="1652815512066" duration="3732000" />
+      <workItem from="1652837372159" duration="11335000" />
+      <workItem from="1652860963056" duration="4024000" />
+      <workItem from="1652892383032" duration="320000" />
     </task>
     <servers />
   </component>
@@ -115,6 +165,7 @@
         <option value="$PROJECT_DIR$/../ss2/bai_tap/src/fibonaci.js.map" />
         <option value="$PROJECT_DIR$/../ss2/bai_tap/src/fibonaci.d.ts" />
         <option value="$PROJECT_DIR$/../ss2/bai_tap/src/fibonaci.js" />
+        <option value="$PROJECT_DIR$/../ss8_dependency/thuc_hanh/angular-gallery-app/node_modules/karma/config.tpl.js" />
       </list>
     </option>
   </component>
@@ -123,10 +174,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816@0.0.1536.816" timestamp="1652154893548" />
-    <state x="549" y="164" key="FileChooserDialogImpl" timestamp="1652710364911">
+    <state x="549" y="164" key="FileChooserDialogImpl" timestamp="1652772594940">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="164" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1652710364911" />
+    <state x="549" y="164" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1652772594940" />
     <state x="277" y="52" key="SettingsEditor" timestamp="1652048480552">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

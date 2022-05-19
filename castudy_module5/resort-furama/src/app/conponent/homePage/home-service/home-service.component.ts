@@ -18,6 +18,7 @@ export class HomeServiceComponent implements OnInit {
   deleteFacility: IFacility;
   serviceType: IServiceType[] = [];
   checkEdit: boolean = false;
+  p: number = 1;
 
 
   constructor(private facilityService: FacilityServiceService) {

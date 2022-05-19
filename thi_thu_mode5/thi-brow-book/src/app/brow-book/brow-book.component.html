@@ -1,0 +1,115 @@
+<!--<div class=" col-4 mx-auto" id="main-container">-->
+<!--  <form [formGroup]="browBookForm" (ngSubmit)="submit()">-->
+<!--    <div class="modal-header">-->
+<!--      <h5 style="font-size: 22px ; font-weight: bold" class="modal-title">mượn sách</h5>-->
+<!--    </div>-->
+<!--    <div class="modal-body">-->
+
+
+<!--      <div class="mb-3">-->
+<!--        <label for="price1" class="form-label">ngày trả<span class="text-danger">(*)</span></label>-->
+<!--        <input type="date" class="form-control" id="price1" formControlName="endDate">-->
+<!--      </div>-->
+
+<!--      <div class="mb-3">-->
+<!--        <label for="description" class="form-label">trạng thái<span class="text-danger">(*)</span></label>-->
+<!--        <input type="text" class="form-control" id="description" formControlName="status">-->
+<!--      </div>-->
+
+<!--      <div class="mb-3">-->
+<!--        <label for="name" class="form-label">mã sách<span class="text-danger">(*)</span></label>-->
+<!--        <input readonly type="text" class="form-control" id="name" formControlName="bookId">-->
+<!--      </div>-->
+
+<!--      <div class="mb-3">-->
+<!--        <label for="price" class="form-label">ngày mượn<span class="text-danger">(*)</span></label>-->
+<!--        <input type="date" class="form-control" id="price" formControlName="startDate">-->
+<!--      </div>-->
+<!--      -->
+<!--      <div class="mb-3">-->
+<!--        <label for="browCode" class="form-label">ma muon sach<span class="text-danger">(*)</span></label>-->
+<!--        <input type="text" class="form-control" id="browCode" formControlName="browCode">-->
+<!--      </div>-->
+
+
+<!--      <label class="form-label" for="patient">học sinh</label>-->
+<!--      <div class="mb-4">-->
+<!--        <select id="patient" class="form-control" formControlName="studentId">-->
+<!--          <option [ngValue]="a" *ngFor="let a of studentList">{{a.name}}</option>-->
+<!--        </select>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    -->
+<!--    <div class="modal-footer">-->
+<!--      <input type="submit" class="btn btn-primary" value="Thêm mới">-->
+<!--    </div>-->
+<!--  </form>-->
+<!--</div>-->
+
+
+<div class=" col-4 mx-auto" id="main-container">
+  <form [formGroup]="browBookForm" (ngSubmit)="submit()">
+    <div class="modal-header">
+      <h5 class="modal-title">Mượn sách</h5>
+    </div>
+    <div class="modal-body">
+      <div hidden class="mb-3">
+        <label for="ok" class="form-label">trang thai<span class="text-danger">(*)</span></label>
+        <input hidden type="text" class="form-control" id="ok" formControlName="status">
+      </div>
+
+      <div class="mb-3">
+        <label for="browCode" class="form-label">Mã mượn sách<span class="text-danger">(*)</span></label>
+        <input type="text" class="form-control" id="browCode" formControlName="browCode">
+      </div>
+
+      <div class="mb-3">
+        <label for="bookId" class="form-label">ten sach<span class="text-danger">(*)</span></label>
+        <input readonly type="text" class="form-control" id="bookId" formControlName="bookId">
+      </div>
+
+
+      <label class="form-label" for="student">Học sinh</label>
+      <div class="mb-4">
+        <select id="student" class="form-control" formControlName="studentId">
+          <option *ngFor="let student of studentList" [ngValue]="student">{{student.name}}</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="startDate" class="form-label">Ngày mượn<span class="text-danger">(*)</span></label>
+        <input type="date" class="form-control" id="startDate" formControlName="startDate">
+      </div>
+
+      <div class="mb-3">
+        <label for="endDate" class="form-label">Ngày trả<span class="text-danger">(*)</span></label>
+        <input type="date" class="form-control" id="endDate" formControlName="endDate">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <input  type="submit" class="btn btn-primary" value="Thêm mới">
+    </div>
+  </form>
+</div>
+
+
+<!--success modal-->
+<div id="successModal" class="modal fade">
+  <div class="modal-dialog modal-confirm modal-confirm-success">
+  <div class="modal-content">
+    <div class="modal-header modal-header-success justify-content-center">
+      <div class="icon-box">
+        <i class="material-icons">&#xE876;</i>
+      </div>
+      <button type="button" class="close" data-mdb-dismiss="modal" aria-hidden="true">&times;</button>
+    </div>
+    <div class="modal-body text-center">
+      <h4>Great!</h4>
+      <p>Your account has been created successfully.</p>
+      <button type="button" class="btn btn-danger" id="delete_btn" data-mdb-dismiss="modal"
+              [routerLink]="['']">Đồng ý
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+

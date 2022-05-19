@@ -1,0 +1,71 @@
+<div>
+  <input placeholder="tìm kiếm" type="text" (ngModelChange)="searchByName()" [(ngModel)]="searchName">
+
+  <input placeholder="tìm kiếm" type="text" (ngModelChange)="searchByName()" [(ngModel)]="searchName">
+
+  <input placeholder="tìm kiếm" type="text" (ngModelChange)="searchByName()" [(ngModel)]="searchName">
+  <button style="margin-bottom: 15px" (click)="searchByName()">tìm kiếm</button><br>
+</div>
+
+
+<button class="btn btn-warning"><a [routerLink]="['/product/create']">thêm mới sản phẩm</a></button>
+<div class="navbar-nav ms-auto d-flex flex-row">
+  <button type="button" class="btn btn-danger me-3"
+          data-mdb-toggle="modal"
+          data-mdb-target="#modalDeleteMultiple">
+    Delete Multiple
+  </button>
+</div>
+
+<table class="table table-striped table-hover">
+  <thead>
+  <tr>
+    <td></td>
+    <td>STT</td>
+    <td>Tên</td>
+    <td>Giá</td>
+    <td>Mô tả</td>
+    <td>danh mục</td>
+    <td>eidt</td>
+    <td>xóa</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let product of products | paginate : {itemsPerPage : 4 , currentPage :p}; index as i ">
+    <td><input type="checkbox" (click)="checkDelete(product.id)"></td>
+    <td>{{i + 1}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.price}}</td>
+    <td>{{product.description}}</td>
+    <td>{{product.category.name}}</td>
+    <td>
+      <a style="font-size: 14px" class="badge badge-success rounded-pill d-inline"
+         [routerLink]="['/product/edit',product.id]">edit</a>
+    </td>
+    <td>
+      <a style="font-size: 14px" class="badge badge-warning rounded-pill d-inline"
+         (click)="openDiaLogDelete(product.id)">detete</a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<pagination-controls (pageChange)="p=$event"></pagination-controls>
+
+
+<div class="modal fade" tabindex="-1" id="modalDeleteMultiple">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Xác nhận</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Bạn muốn xóa các bản ghi đã chọn?.</p>
+      </div>
+      <div class="modal-footer">
+        <button #closeMulDelModal type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" (click)="deleteMul(closeMulDelModal)">OK</button>
+      </div>
+    </div>
+  </div>
+</div>

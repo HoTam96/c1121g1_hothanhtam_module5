@@ -3,24 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductCreateComponent } from './component/product-create/product-create.component';
-import { ProductEditComponent } from './component/product-edit/product-edit.component';
-import { ProductListComponent } from './component/product-list/product-list.component';
-import { ProductDeleteComponent } from './component/product-delete/product-delete.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {HttpClientModule} from "@angular/common/http";
 import {NgxPaginationModule} from "ngx-pagination";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {MatDialogModule} from "@angular/material/dialog";
+import {ProductModule} from "./product/product.module";
+
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ProductCreateComponent,
-    ProductEditComponent,
-    ProductListComponent,
-    ProductDeleteComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -29,10 +26,13 @@ import {MatDialogModule} from "@angular/material/dialog";
     HttpClientModule,
     NgxPaginationModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ProductModule,
     MatSnackBarModule,
     MatDialogModule,
-    FormsModule
-
+    MatTableModule,
+    MatPaginatorModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

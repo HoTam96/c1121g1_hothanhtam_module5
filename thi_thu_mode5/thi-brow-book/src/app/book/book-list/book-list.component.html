@@ -1,0 +1,94 @@
+<!--<div>-->
+<!--  <input placeholder="tìm kiếm" type="text" (ngModelChange)="searchByName()" [(ngModel)]="searchName">-->
+
+<!--  <input placeholder="tìm kiếm" type="text" (ngModelChange)="searchByName()" [(ngModel)]="searchName">-->
+
+<!--  <input placeholder="tìm kiếm" type="text" (ngModelChange)="searchByName()" [(ngModel)]="searchName">-->
+<!--  <button style="margin-bottom: 15px" (click)="searchByName()">tìm kiếm</button><br>-->
+<!--</div>-->
+
+<!--<div class="navbar-nav ms-auto d-flex flex-row">-->
+<!--  <button type="button" class="btn btn-danger me-3"-->
+<!--          data-mdb-toggle="modal"-->
+<!--          data-mdb-target="#modalDeleteMultiple">-->
+<!--    Delete Multiple-->
+<!--  </button>-->
+<!--</div>-->
+<div id="main-container">
+<table class="table table-striped table-hover" >
+  <thead>
+  <tr>
+    <td>STT</td>
+    <td>mã sách</td>
+    <td>tên sách</td>
+    <td>tác giả</td>
+    <td>mô tả</td>
+    <td>số lượng</td>
+    <td>mượn sách</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let book of bookList ; index as i ">
+    <td>{{i + 1}}</td>
+    <td>{{book.bookCode}}</td>
+    <td>{{book.bookName}}</td>
+    <td>{{book.author}}</td>
+    <td>{{book.description}}</td>
+    <td>{{book.quality}}</td>
+    <td *ngIf="this.book.quality>=1">
+      <a style="font-size: 14px" class="badge badge-success rounded-pill d-inline"
+         [routerLink]="['/brow-book',book.id]">mượn sách</a>
+    </td>
+    <td *ngIf="this.book.quality<1">
+      <a
+        style="font-size: 14px"
+        class="badge badge-success rounded-pill d-inline" (click)="onBook()">mượn sách</a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>
+<!--<pagination-controls (pageChange)="p=$event"></pagination-controls>-->
+
+
+<!--success modal-->
+<div id="successModal" class="modal fade">
+  <div class="modal-dialog modal-confirm modal-confirm-success">
+    <div class="modal-content">
+      <div class="modal-header modal-header-success justify-content-center">
+        <div class="icon-box">
+          <i class="material-icons">&#xE876;</i>
+        </div>
+        <button type="button" class="close" data-mdb-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body text-center">
+        <h4>oh no!</h4>
+        <p>đã hết sách. vui lòng chọn khác</p>
+        <button type="button" class="btn btn-danger" id="delete_btn" data-mdb-dismiss="modal"
+                [routerLink]="['']">Đồng ý
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--<div class="modal fade" tabindex="-1" id="modalDeleteMultiple">-->
+<!--  <div class="modal-dialog">-->
+<!--    <div class="modal-content">-->
+<!--      <div class="modal-header">-->
+<!--        <h5 class="modal-title">Xác nhận</h5>-->
+<!--        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>-->
+<!--      </div>-->
+<!--      <div class="modal-body">-->
+<!--        <p>Bạn muốn xóa các bản ghi đã chọn?.</p>-->
+<!--      </div>-->
+<!--      <div class="modal-footer">-->
+<!--        <button #closeMulDelModal type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>-->
+<!--        <button type="submit" class="btn btn-primary" (click)="deleteMul(closeMulDelModal)">OK</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+

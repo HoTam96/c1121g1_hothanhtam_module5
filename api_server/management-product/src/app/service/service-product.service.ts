@@ -38,9 +38,8 @@ export class ServiceProductService {
     return this.http.put<Iproduct>(`${this.api}/product/${id}`, product);
   }
 
-  searchName(keyWork):Observable<Iproduct[]> {
-    return this.http.get<Iproduct[]>(`${this.api}/product?name_like=${keyWork}`);
-    // http://localhost:3000/product?name_like=14
+  searchName(keyWork, price, category): Observable<Iproduct[]> {
+    return this.http.get<Iproduct[]>(`${this.api}/product?name_like=${keyWork}&price_like=${price}&category_like=${category.name}`);
   }
 
 }

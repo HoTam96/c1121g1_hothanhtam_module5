@@ -5,6 +5,7 @@ import {HttpErrorResponse} from "@angular/common/http";
 import {Router} from "@angular/router";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {ICustomerType} from "../../../model/ICustomerType";
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
   selector: 'app-list',
@@ -24,9 +25,8 @@ export class ListComponent implements OnInit {
   searchName = '';
 
 
-  constructor(private customerService: CustomerServiceService, private router: Router) {
+  constructor(private customerService: CustomerServiceService, private router: Router, private snackBar: MatSnackBar) {
     this.checkEdit = false;
-
     this.editCustomerForm = new FormGroup({
       id: new FormControl(""),
       customerCode: new FormControl("", [Validators.required, Validators.pattern('^(KH-)\\d{4}$')]),
@@ -38,25 +38,31 @@ export class ListComponent implements OnInit {
       email: new FormControl("", [Validators.required, Validators.email]),
       address: new FormControl("", [Validators.required]),
       customerType: new FormControl("", [Validators.required]),
-    })
+    });
+
   }
 
   ngOnInit(): void {
+
     this.customerService.getAllCustomerType().subscribe((res1: ICustomerType[]) => {
         this.customerType = res1;
-
-        this.customerService.getAllCustomer(this.searchName, this.pageNumber).subscribe((res: any) => {
-          this.customerList = res.content;
-          this.totalPages = res.totalPages;
-          this.pageNumber = res.pageable.pageNumber;
-        }, (error: HttpErrorResponse) => {
-          alert('ngu chết mẹ mày đi')
-        });
-
+        console.log(this.customerType);
+        this.getCustomerService();
       }, (error: HttpErrorResponse) => {
         alert('ngu chết mẹ đi')
       }
     );
+
+  }
+
+  getCustomerService() {
+    this.customerService.getAllCustomer(this.searchName, this.pageNumber).subscribe((res: any) => {
+      this.customerList = res.content;
+      this.totalPages = res.totalPages;
+      this.pageNumber = res.pageable.pageNumber;
+    }, (error: HttpErrorResponse) => {
+      alert('ngu chết mẹ mày đi')
+    });
 
   }
 
@@ -104,8 +110,8 @@ export class ListComponent implements OnInit {
       button.setAttribute('data-mdb-target', '#deleteModal');
     }
     if (model == 'edit') {
-      console.log('hahahihi');
       this.editCustomerForm.patchValue(a);
+      console.log(a);
       this.checkEdit = true;
       button.setAttribute('data-mdb-target', '#editModal');
     }
@@ -118,27 +124,27 @@ export class ListComponent implements OnInit {
   delete(closeModal: HTMLButtonElement) {
     this.customerService.deleteCustomer(this.deleteCustomer).subscribe((res: void) => {
       closeModal.click();
-      this.ngOnInit();
+      this.getCustomerService();
 
     }, (error: HttpErrorResponse) => {
       alert('sai rồi');
     })
   }
 
-  // edit(closeModal: HTMLButtonElement) {
-  //   this.customerService.deleteCustomer(this.deleteCustomer).subscribe((res: void) => {
-  //     closeModal.click();
-  //     this.ngOnInit();
-  //
-  //   }, (error: HttpErrorResponse) => {
-  //     alert('sai rồi');
-  //   })
-  // }
-
   onsubmit(closeModal: HTMLButtonElement) {
     closeModal.click();
     this.customerService.updateCustomer(this.editCustomerForm.value).subscribe((res: void) => {
-      this.ngOnInit();
+      const container = document.getElementById('main-container');
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.style.display = 'none';
+      button.setAttribute('data-mdb-toggle', 'modal');
+      button.setAttribute('data-mdb-target', '#successModal');
+      container.appendChild(button);
+      // this.check = true;
+      button.click();
+      this.getCustomerService();
+
     }, (error: HttpErrorResponse) => {
       alert('gặp lỗi')
     });
@@ -171,6 +177,6 @@ export class ListComponent implements OnInit {
   search(event) {
     this.searchName = event;
     this.pageNumber = 0;
-    this.ngOnInit();
+    this.getCustomerService();
   }
 }
