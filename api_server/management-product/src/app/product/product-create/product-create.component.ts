@@ -21,7 +21,6 @@ export class ProductCreateComponent implements OnInit {
   constructor(private productService: ServiceProductService, private router: Router, private category: CategorysService,
               private snackBar: MatSnackBar) {
 
-
   };
 
 
@@ -30,14 +29,25 @@ export class ProductCreateComponent implements OnInit {
       this.categoryList = res;
       this.productForm = new FormGroup({
         id: new FormControl("", [Validators.required]),
-        name: new FormControl("", [Validators.required]),
-        price: new FormControl("", [Validators.required]),
-        description: new FormControl("", [Validators.required]),
+        name: new FormControl("", [Validators.required, Validators.pattern('(HS-)\\d{3}')]),
+        price: new FormControl("", [Validators.required, Validators.min(1)]),
+        description: new FormControl("", [Validators.required, Validators.maxLength(20)]),
         category: new FormControl(this.categoryList[1], [Validators.required]),
       });
     });
     console.log('haha1')
   }
+
+  get name(){
+    return this.productForm.get('name');
+  }
+  get price(){
+    return this.productForm.get('price');
+  }
+  get description(){
+    return this.productForm.get('description');
+  }
+
 
   submit() {
     console.log('hihi')

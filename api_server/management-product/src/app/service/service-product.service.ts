@@ -19,8 +19,8 @@ export class ServiceProductService {
     return this.http.get<Iproduct>(`${this.api}/product/${id}`,)
   }
 
-  getAll(): Observable<Iproduct[]> {
-    return this.http.get<Iproduct[]>(`${this.api}/product`);
+  getAll(keyWork, category): Observable<Iproduct[]> {
+    return this.http.get<Iproduct[]>(`${this.api}/product?name_like=${keyWork}&category.name_like=${category}`);
   }
 
   save(product: Iproduct): Observable<Iproduct> {
@@ -38,8 +38,8 @@ export class ServiceProductService {
     return this.http.put<Iproduct>(`${this.api}/product/${id}`, product);
   }
 
-  searchName(keyWork, price, category): Observable<Iproduct[]> {
-    return this.http.get<Iproduct[]>(`${this.api}/product?name_like=${keyWork}&price_like=${price}&category_like=${category.name}`);
-  }
+  // searchName(keyWork, price, category): Observable<Iproduct[]> {
+  //   return this.http.get<Iproduct[]>(`${this.api}/product?name_like=${keyWork}&price_like=${price}&category_like=${category.name}`);
+  // }
 
 }

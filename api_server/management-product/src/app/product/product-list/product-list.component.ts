@@ -4,7 +4,6 @@ import {Iproduct} from "../../model/iproduct";
 import {HttpErrorResponse} from "@angular/common/http";
 import {MatDialog} from "@angular/material/dialog";
 import {ProductDeleteComponent} from "../product-delete/product-delete.component";
-import {MatTableDataSource} from "@angular/material/table";
 
 @Component({
   selector: 'app-product-list',
@@ -13,9 +12,11 @@ import {MatTableDataSource} from "@angular/material/table";
 })
 export class ProductListComponent implements OnInit {
   products: Iproduct[] = [];
-  searchName: String;
+  searchName = '';
   p: number = 1;
   listIdDelete: number[] = [];
+  searchCategory = '';
+
 
   constructor(private productService: ServiceProductService, private dialog: MatDialog) {
   }
@@ -25,8 +26,11 @@ export class ProductListComponent implements OnInit {
   }
 
   getAllProduct(): void {
-    this.productService.getAll().subscribe((res: Iproduct[]) => {
+    this.productService.getAll(this.searchName, this.searchCategory).subscribe((res: Iproduct[]) => {
         this.products = res;
+        if (this.products.length == 0) {
+          alert('không có trường muốn tìm')
+        }
       },
       (error: HttpErrorResponse) => {
         console.log(error);
@@ -43,17 +47,16 @@ export class ProductListComponent implements OnInit {
         this.ngOnInit();
       })
     })
-
   }
 
-  searchByName() {
-    this.productService.searchName(this.searchName).subscribe((res: Iproduct[]) => {
-      this.products = res;
-      this.p = 1;
-    }, (error: HttpErrorResponse) => {
-      alert('thôi bạn ơi')
-    })
-  }
+  // searchByName() {
+  //   this.productService.searchName(this.searchName).subscribe((res: Iproduct[]) => {
+  //     this.products = res;
+  //     this.p = 1;
+  //   }, (error: HttpErrorResponse) => {
+  //     alert('thôi bạn ơi')
+  //   })
+  // }
 
   checkDelete(id: number) {
     console.log(this.listIdDelete);
@@ -86,5 +89,10 @@ export class ProductListComponent implements OnInit {
         }
       })
     }
+  }
+
+  searchByName() {
+    this.getAllProduct();
+
   }
 }

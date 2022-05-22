@@ -1,0 +1,200 @@
+<div class=" col-4 mx-auto" id="main-container">
+  <form *ngIf="createForm" [formGroup]="createForm" (ngSubmit)="submit()">
+    <div class="modal-header">
+      <h5 style="font-size: 22px ; font-weight: bold" class="modal-title">Thêm mới sản phẩm</h5>
+    </div>
+    <div class="modal-body">
+
+      <label class="form-label" for="category">danh mục</label>
+      <div class="mb-4">
+        <select id="category" class="form-control" formControlName="categoryLand">
+          <option *ngFor="let category of categoryList" [ngValue]="category">
+            {{category.name}}
+          </option>
+        </select>
+      </div>
+
+      <label class="form-label" for="regions">vung miền</label>
+      <div class="mb-4">
+        <select id="regions" class="form-control" formControlName="regions">
+          <option *ngFor="let regions of regionsList" [ngValue]="regions">
+            {{regions.name}}
+          </option>
+        </select>
+      </div>
+
+      <label class="form-label">bạn là : </label>
+      <div class="form-check form-check-inline">
+        <input formControlName="identification" class="form-check-input" type="radio"  id="inlineRadio1" value="cá nhân" />
+        <label class="form-check-label" for="inlineRadio1">cá nhân</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input formControlName="identification" class="form-check-input" type="radio" id="inlineRadio2" value="công ty" />
+        <label class="form-check-label" for="inlineRadio2">công ty</label>
+      </div>
+      <br>
+      <label class="form-label" for="postUp">bài đăng</label>
+      <div class="mb-4">
+        <select id="postUp" class="form-control" formControlName="postUp">
+          <option *ngFor="let post of postUpList" [ngValue]="post">
+            {{post.name}}
+          </option>
+        </select>
+      </div>
+
+
+      <label class="form-label">Tình trạng : </label>
+      <div class="form-check form-check-inline">
+        <input formControlName="conditional" class="form-check-input" type="radio"  id="inlineRadio3" value="mới" />
+        <label class="form-check-label" for="inlineRadio1">mới</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input formControlName="conditional" class="form-check-input" type="radio"  id="inlineRadio4" value="đã sử dụng" />
+        <label class="form-check-label" for="inlineRadio2">đã sử dụng</label>
+      </div>
+      <br>
+      <div class="mb-3">
+        <label for="diaChi" class="form-label">đại chỉ<span class="text-danger">(*)</span></label>
+        <input type="text" class="form-control" id="diaChi" formControlName="address">
+        <div *ngIf="address?.touched ||address.dirty">
+          <small class="text-danger" *ngIf="address?.errors?.required">địa chỉ không được để trống.</small>
+        </div>
+        <div *ngIf="address.valid">
+          <small class="text-success">Hợp lệ.</small>
+        </div>
+
+        <div class="mb-3">
+          <label for="dienTich" class="form-label">diện tích<span class="text-danger">(*)</span></label>
+          <input type="text" class="form-control" id="dienTich" formControlName="area">
+          <div *ngIf="area?.touched ||area.dirty">
+            <small class="text-danger" *ngIf="area?.errors?.required">diện tích không được để trống.</small>
+            <small class="text-danger" *ngIf="area?.errors?.min">diện tích ko được nhỏ hơn 20 m2 </small>
+          </div>
+          <div *ngIf="area.valid">
+            <small class="text-success">Hợp lệ.</small>
+          </div>
+
+        </div>
+
+        <label class="form-label" for="direction">Hướng</label>
+        <div class="mb-4">
+          <select id="direction" class="form-control" formControlName="direction">
+            <option *ngFor="let direction of directionList" [ngValue]="direction">
+              {{direction.name}}
+            </option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="tuaDe" class="form-label">tựa đề<span class="text-danger">(*)</span></label>
+          <input type="text" class="form-control" id="tuaDe" formControlName="title">
+          <div *ngIf="title?.touched ||title.dirty">
+            <small class="text-danger" *ngIf="title?.errors?.required">tiêu đề không được để trống.</small>
+          </div>
+          <div *ngIf="title.valid">
+            <small class="text-success">Hợp lệ.</small>
+          </div>
+        </div>
+
+
+        <div class="mb-3">
+          <label for="noiDung" class="form-label">nội dung<span class="text-danger">(*)</span></label>
+          <input type="text" class="form-control" id="noiDung" formControlName="content">
+          <div *ngIf="content?.touched ||content.dirty">
+            <small class="text-danger" *ngIf="content?.errors?.required">nội dung không được để trống.</small>
+          </div>
+          <div *ngIf="content.valid">
+            <small class="text-success">Hợp lệ.</small>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="gia" class="form-label">giá <span class="text-danger">(*)</span></label>
+          <input type="text" class="form-control" id="gia" formControlName="price">
+          <div *ngIf="price?.touched ||price.dirty">
+            <small class="text-danger" *ngIf="price?.errors?.required">giá không được để trống.</small>
+            <small class="text-danger" *ngIf="price?.errors?.min">giá phải lớn hơn 100.000000.</small>
+            <small class="text-danger" *ngIf="price?.errors?.pattern">ko được nhập chử</small>
+          </div>
+          <div *ngIf="price.valid">
+            <small class="text-success">Hợp lệ.</small>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="hinhAnh" class="form-label">hình ảnh<span class="text-danger">(*)</span></label>
+          <input type="text" class="form-control" id="hinhAnh" formControlName="photo">
+          <div *ngIf="photo?.touched ||photo.dirty">
+            <small class="text-danger" *ngIf="photo?.errors?.required">hình ảnh không được để trống.</small>
+          </div>
+          <div *ngIf="photo.valid">
+            <small class="text-success">Hợp lệ.</small>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="ngayDang" class="form-label">ngày đăng<span class="text-danger">(*)</span></label>
+          <input type="date" class="form-control" id="ngayDang" formControlName="startDate">
+          <div *ngIf="startDate?.touched ||startDate.dirty">
+            <small class="text-danger" *ngIf="startDate?.errors?.required">ngày đăng không được để trống.</small>
+          </div>
+          <div *ngIf="startDate.valid">
+            <small class="text-success">Hợp lệ.</small>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="btn btn-primary" value="Thêm mới">
+      </div>
+    </div>
+  </form>
+</div>
+<!--[disabled]="!productForm.valid"-->
+success modal
+<div id="successModal" class="modal fade" *ngIf="createForm">
+  <div class="modal-dialog modal-confirm modal-confirm-success">
+    <div class="modal-content">
+      <div class="modal-header modal-header-success justify-content-center">
+        <div class="icon-box">
+          <i class="material-icons">&#xE876;</i>
+        </div>
+        <button type="button" class="close" data-mdb-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center">
+        <h1>xác nhận lại thông tin</h1>
+        <label class="form-label" for="category">danh mục : </label>
+        <span>{{land.categoryLand.name}}</span><br>
+        <label class="form-label" for="category">tình trạng : </label>
+        <span>{{land.conditional}}</span><br>
+        <label class="form-label" for="category">địa chỉ : </label>
+        <span>{{land.address}}</span><br>
+        <label class="form-label" for="category">bạn là : </label>
+        <span>{{land.identification}}</span><br>
+        <label class="form-label" for="category">diện tích : </label>
+        <span>{{land.area}}</span><br>
+        <label class="form-label" for="category">tiêu đề : </label>
+        <span>{{land.title}}</span><br>
+        <label class="form-label" for="category">nội dung :</label>
+        <span>{{land.content}}</span><br>
+        <label class="form-label" for="category">giá :</label>
+        <span>{{land.price}}</span><br>
+        <label class="form-label" for="category">hình ảnh: </label>
+        <span>{{land.photo}}</span><br>
+        <label class="form-label" for="category">ngày bắt đầu : </label>
+        <span>{{land.startDate}}</span><br>
+        <label class="form-label" for="category">trạng thái :</label>
+        <span>chờ kiểm duyệt</span><br>
+        <label class="form-label" for="category">hướng :</label>
+        <span>{{land.direction.name}}</span><br>
+        <label class="form-label" for="category">vùng miền :</label>
+        <span>{{land.regions.name}}</span><br>
+        <label class="form-label" for="category">bài đăng :</label>
+        <span>{{land.postUp.name}}</span><br>
+        <button type="button" class="btn btn-danger" id="delete_btn" data-mdb-dismiss="modal"
+               (click)="ok()">Đồng ý
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+

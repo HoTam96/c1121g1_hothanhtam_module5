@@ -78,7 +78,7 @@
         "bookName": "ngày giông mưa rào",
         "author": "ngô tất tố",
         "description": "sách sản năm 2001",
-        "quality": 5
+        "quality": 6
       },
       "browCode": "B-001",
       "studentId": {
@@ -108,7 +108,7 @@
         "name": "thanh tú",
         "class": "c1121g1"
       },
-      "status": false,
+      "status": true,
       "startDate": "2022-01-04",
       "endDate": "2022-01-07"
     },
@@ -120,7 +120,7 @@
         "bookName": "ngày giông bão",
         "author": "ngô tất tố",
         "description": "sách sản năm 2001",
-        "quality": 5
+        "quality": 6
       },
       "browCode": "B-003",
       "studentId": {
@@ -133,9 +133,6 @@
       "startDate": "2022-01-03",
       "endDate": "2022-01-07"
     },
-
-
-
     {
       "browCode": "B-145",
       "status": false,
@@ -147,7 +144,7 @@
         "bookName": "tuyên ngon độc lập",
         "author": "hồ chí minh",
         "description": "sách sản năm 2001",
-        "quality": 2
+        "quality": 3
       },
       "studentId": {
         "id": 1,
@@ -156,16 +153,226 @@
         "class": "c1121g1"
       },
       "id": 29
+    },
+    {
+      "browCode": "B-099",
+      "status": true,
+      "startDate": "2022-05-20",
+      "endDate": "2022-06-03",
+      "bookId": {
+        "id": 1,
+        "bookCode": "B-001",
+        "bookName": "ngày giông bão",
+        "author": "ngô tất tố",
+        "description": "sách sản năm 2001",
+        "quality": 5
+      },
+      "studentId": {
+        "id": 1,
+        "studentCode": "ST-001",
+        "name": "thanh tâm",
+        "class": "c1121g1"
+      },
+      "id": 30
+    },
+    {
+      "browCode": "MS-3468",
+      "status": false,
+      "startDate": "2022-05-19",
+      "endDate": "2022-05-20",
+      "bookId": {
+        "id": 2,
+        "bookCode": "B-002",
+        "bookName": "tắt đèn",
+        "author": "ngô tất tố",
+        "description": "sách sản năm 2001",
+        "quality": 8
+      },
+      "studentId": {
+        "id": 1,
+        "studentCode": "ST-001",
+        "name": "thanh tâm",
+        "class": "c1121g1"
+      },
+      "id": 31
+    },
+    {
+      "browCode": "MS-0001",
+      "status": true,
+      "startDate": "2022-05-19",
+      "endDate": "2022-05-21",
+      "bookId": {
+        "id": 2,
+        "bookCode": "B-002",
+        "bookName": "tắt đèn",
+        "author": "ngô tất tố",
+        "description": "sách sản năm 2001",
+        "quality": 8
+      },
+      "studentId": {
+        "id": 1,
+        "studentCode": "ST-001",
+        "name": "thanh tâm",
+        "class": "c1121g1"
+      },
+      "id": 32
+    },
+    {
+      "browCode": "MS-8976",
+      "status": true,
+      "startDate": "2022-05-19",
+      "endDate": "2022-05-14",
+      "bookId": {
+        "id": 3,
+        "bookCode": "B-003",
+        "bookName": "ngày giông bão",
+        "author": "ngô tất tố",
+        "description": "sách sản năm 2001",
+        "quality": 6
+      },
+      "studentId": {
+        "id": 1,
+        "studentCode": "ST-001",
+        "name": "thanh tâm",
+        "class": "c1121g1"
+      },
+      "id": 33
+    },
+    {
+      "browCode": "MS-9234",
+      "status": true,
+      "startDate": "2022-05-19",
+      "endDate": "2022-06-03",
+      "bookId": {
+        "id": 2,
+        "bookCode": "B-002",
+        "bookName": "tắt đèn",
+        "author": "ngô tất tố",
+        "description": "sách sản năm 2001",
+        "quality": 7
+      },
+      "studentId": {
+        "id": 3,
+        "studentCode": "ST-003",
+        "name": "thanh quang",
+        "class": "c1121g1"
+      },
+      "id": 34
+    },
+    {
+      "browCode": "",
+      "status": true,
+      "startDate": "2022-05-19",
+      "endDate": "2022-05-28",
+      "bookId": {
+        "id": 1,
+        "bookCode": "B-001",
+        "bookName": "ngày giông mưa rào",
+        "author": "ngô tất tố",
+        "description": "sách sản năm 2001",
+        "quality": 6
+      },
+      "studentId": {
+        "id": 1,
+        "studentCode": "ST-001",
+        "name": "thanh tâm",
+        "class": "c1121g1"
+      },
+      "id": 35
+    },
+    {
+      "browCode": "",
+      "status": true,
+      "startDate": "2022-05-19",
+      "endDate": "2022-05-20",
+      "bookId": {
+        "id": 2,
+        "bookCode": "B-002",
+        "bookName": "tắt đèn",
+        "author": "ngô tất tố",
+        "description": "sách sản năm 2001",
+        "quality": 6
+      },
+      "studentId": {
+        "id": 1,
+        "studentCode": "ST-001",
+        "name": "thanh tâm",
+        "class": "c1121g1"
+      },
+      "id": 36
+    },
+    {
+      "browCode": "",
+      "status": true,
+      "startDate": "2022-05-19",
+      "endDate": "2022-05-21",
+      "bookId": {
+        "id": 2,
+        "bookCode": "B-002",
+        "bookName": "tắt đèn",
+        "author": "ngô tất tố",
+        "description": "sách sản năm 2001",
+        "quality": 5
+      },
+      "studentId": {
+        "id": 1,
+        "studentCode": "ST-001",
+        "name": "thanh tâm",
+        "class": "c1121g1"
+      },
+      "id": 37
+    },
+    {
+      "browCode": "MS-008",
+      "status": true,
+      "startDate": "2022-05-19",
+      "endDate": "2022-05-28",
+      "bookId": {
+        "id": 2,
+        "bookCode": "B-002",
+        "bookName": "tắt đèn",
+        "author": "ngô tất tố",
+        "description": "sách sản năm 2001",
+        "quality": 4
+      },
+      "studentId": {
+        "id": 1,
+        "studentCode": "ST-001",
+        "name": "thanh tâm",
+        "class": "c1121g1"
+      },
+      "id": 38
+    },
+    {
+      "browCode": "MS-088",
+      "status": true,
+      "startDate": "2022-05-19",
+      "endDate": "2022-05-28",
+      "bookId": {
+        "id": 1,
+        "bookCode": "B-001",
+        "bookName": "ngày giông mưa rào",
+        "author": "ngô tất tố",
+        "description": "sách sản năm 2001",
+        "quality": 5
+      },
+      "studentId": {
+        "id": 1,
+        "studentCode": "ST-001",
+        "name": "thanh tâm",
+        "class": "c1121g1"
+      },
+      "id": 39
     }
   ],
   "book": [
     {
       "id": 1,
       "bookCode": "B-001",
-      "bookName": "ngày giông bão",
+      "bookName": "ngày giông mưa rào",
       "author": "ngô tất tố",
       "description": "sách sản năm 2001",
-      "quality": 5
+      "quality": 4
     },
     {
       "id": 2,
@@ -178,10 +385,10 @@
     {
       "id": 3,
       "bookCode": "B-003",
-      "bookName": "chị dậu",
+      "bookName": "ngày giông bão",
       "author": "ngô tất tố",
       "description": "sách sản năm 2001",
-      "quality": 7
+      "quality": 5
     },
     {
       "id": 4,
@@ -189,7 +396,7 @@
       "bookName": "tuyên ngon độc lập",
       "author": "hồ chí minh",
       "description": "sách sản năm 2001",
-      "quality": 2
+      "quality": 4
     },
     {
       "id": 5,

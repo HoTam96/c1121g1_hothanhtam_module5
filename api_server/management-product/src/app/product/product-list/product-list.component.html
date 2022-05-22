@@ -1,12 +1,12 @@
 <div>
-  <input placeholder="tìm kiếm" type="text" (ngModelChange)="searchByName()" [(ngModel)]="searchName">
+  <input placeholder="tìm kiếm" type="text" [(ngModel)]="searchName">
 
-  <input placeholder="tìm kiếm" type="text" (ngModelChange)="searchByName()" [(ngModel)]="searchName">
+  <input placeholder="tìm kiếm" type="text" [(ngModel)]="searchCategory">
 
-  <input placeholder="tìm kiếm" type="text" (ngModelChange)="searchByName()" [(ngModel)]="searchName">
-  <button style="margin-bottom: 15px" (click)="searchByName()">tìm kiếm</button><br>
+<!--  <input placeholder="tìm kiếm" type="text" [(ngModel)]="searchPrice">-->
+  <button style="margin-bottom: 15px" (click)="searchByName()">tìm kiếm</button>
+  <br>
 </div>
-
 
 <button class="btn btn-warning"><a [routerLink]="['/product/create']">thêm mới sản phẩm</a></button>
 <div class="navbar-nav ms-auto d-flex flex-row">

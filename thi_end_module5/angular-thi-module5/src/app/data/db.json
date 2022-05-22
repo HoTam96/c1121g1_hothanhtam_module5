@@ -1,0 +1,137 @@
+{
+  "danhMuc": [
+    {
+      "id": 1,
+      "tenDanhMuc": "nhà đất"
+    },
+    {
+      "id": 2,
+      "tenDanhMuc": "đất nền"
+    },
+    {
+      "id": 3,
+      "tenDanhMuc": "hàng hóa"
+    }
+  ],
+  "information": [
+    {
+      "id": 1,
+      "danhMuc": {
+        "id": 1,
+        "tenDanhMuc": "nhà đất"
+      },
+      "dinhDanh": "cá nhân",
+      "dangTin": "nhà đất",
+      "tinhTrang": "mới",
+      "diaChi": "hà nội",
+      "dienTich": "200",
+      "huong": "đông",
+      "tuaDe": "nhà đất hôm nay",
+      "noiDung": "bán nhà",
+      "gia": "200000",
+      "hinhAnh": ".....",
+      "vungMien": "miền bắc",
+      "ngayDang": "2002-01-09",
+      "trangThai": "đang rao"
+    },
+    {
+      "id": 2,
+      "danhMuc": {
+        "id": 2,
+        "tenDanhMuc": "đất nền"
+      },
+      "dinhDanh": "công ty",
+      "dangTin": "nhà đất",
+      "tinhTrang": "mới",
+      "diaChi": "hà nội",
+      "dienTich": "200",
+      "huong": "bắc",
+      "tuaDe": "nhà đất hôm nay",
+      "noiDung": "bán nhà",
+      "gia": "300000",
+      "hinhAnh": ".....",
+      "vungMien": "miền bắc",
+      "ngayDang": "2002-01-09",
+      "trangThai": "đang rao"
+    },
+    {
+      "id": 3,
+      "danhMuc": {
+        "id": 3,
+        "tenDanhMuc": "hàng hóa"
+      },
+      "dinhDanh": "công tâm",
+      "dangTin": "nhà tâm",
+      "tinhTrang": "mới",
+      "diaChi": "hà nội",
+      "dienTich": "100",
+      "huong": "bắc",
+      "tuaDe": "nhà đất hôm nay",
+      "noiDung": "bán nhà",
+      "gia": "100000",
+      "hinhAnh": ".....",
+      "vungMien": "miền bắc",
+      "ngayDang": "2002-01-09",
+      "trangThai": "đang rao"
+    },
+    {
+      "id": 4,
+      "danhMuc": {
+        "id": 2,
+        "tenDanhMuc": "đất nền"
+      },
+      "dinhDanh": "cá nhân",
+      "vungMien": "miền trung",
+      "dangTin": "cần bán",
+      "tinhTrang": "mới",
+      "diaChi": "",
+      "dienTich": "200",
+      "huong": "đông",
+      "tuaDe": "nhiều người",
+      "noiDung": "cần bán nhà",
+      "gia": "200000000000",
+      "hinhAnh": "....",
+      "ngayDang": "2022-05-19"
+    },
+    {
+      "id": 5,
+      "danhMuc": {
+        "id": 2,
+        "tenDanhMuc": "đất nền"
+      },
+      "dinhDanh": "cá nhân",
+      "vungMien": "miền trung",
+      "dangTin": "cần bán",
+      "tinhTrang": "mới",
+      "diaChi": "",
+      "dienTich": "10000",
+      "huong": "đông",
+      "tuaDe": "nhiều người",
+      "noiDung": "cần bán nhà",
+      "gia": "200000000000",
+      "hinhAnh": ".....",
+      "ngayDang": "2022-05-17",
+      "trangThai": "đã đăng"
+    },
+    {
+      "id": 6,
+      "danhMuc": {
+        "id": 1,
+        "tenDanhMuc": "nhà đất"
+      },
+      "dinhDanh": "cá nhân",
+      "vungMien": "miền nam",
+      "dangTin": "cần bán",
+      "tinhTrang": "mới",
+      "diaChi": "",
+      "dienTich": "10000",
+      "huong": "đông",
+      "tuaDe": "anh tâm của em đây",
+      "noiDung": "cần bán nhà",
+      "gia": "200000000000",
+      "hinhAnh": "....",
+      "ngayDang": "2022-05-20",
+      "trangThai": "đã đăng"
+    }
+  ]
+}

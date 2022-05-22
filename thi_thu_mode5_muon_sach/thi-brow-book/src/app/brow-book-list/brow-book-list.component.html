@@ -1,0 +1,60 @@
+<div class="input-group mt-5 mb-5">
+  <input  [(ngModel)]="searchBookName"  type="search" class="form-control-4 rounded" placeholder="search tên sách" aria-label="Search" aria-describedby="search-addon" />
+  <input [ngModel]="searchStudentName" type="search" class="form-control-4 rounded" placeholder="search tên học sinh" aria-label="Search" aria-describedby="search-addon" />
+  <button (click)="getAllBrowBook1()" type="button" class="btn btn-outline-primary">search</button>
+</div>
+
+<div id="main-container">
+  <table class="table table-striped table-hover" >
+    <thead>
+    <tr>
+      <td>STT</td>
+      <td>mã sách</td>
+      <td>tên sách</td>
+      <td>tác giả</td>
+      <td>tên học sinh</td>
+      <td>lớp</td>
+      <td>ngày mươn</td>
+      <td>ngày trả</td>
+      <td>Action</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let a of browBookList ; index as i ">
+      <td>{{i + 1}}</td>
+      <td>{{a.bookId.bookCode}}</td>
+      <td>{{a.bookId.bookName}}</td>
+      <td>{{a.bookId.author}}</td>
+      <td>{{a.studentId.name}}</td>
+      <td>{{a.studentId.class}}</td>
+      <td>{{a.startDate}}</td>
+      <td>{{a.endDate}}</td>
+      <td>
+        <a style="font-size: 14px" class="badge badge-success rounded-pill d-inline" (click)="browBook(a)">trả sách</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<!--success modal-->
+<div id="successModal" class="modal fade">
+  <div class="modal-dialog modal-confirm modal-confirm-success">
+    <div class="modal-content">
+      <div class="modal-header modal-header-success justify-content-center">
+        <div class="icon-box">
+          <i class="material-icons">&#xE876;</i>
+        </div>
+        <button type="button" class="close" data-mdb-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body text-center">
+        <h4>Great!</h4>
+        <p>Your account has been created successfully.</p>
+        <button type="button" class="btn btn-danger" id="delete_btn" data-mdb-dismiss="modal" >Đồng ý
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

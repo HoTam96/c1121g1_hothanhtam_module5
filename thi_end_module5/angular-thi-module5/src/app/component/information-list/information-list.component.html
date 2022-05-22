@@ -1,0 +1,66 @@
+<div class="input-group mt-5 mb-5">
+  <input [(ngModel)]="serarchByArea" type="search" class="form-control-4 rounded"
+         placeholder="search diện tích " aria-label="Search" aria-describedby="search-addon"/>
+
+  <input [(ngModel)]="serarchByPrice" type="search" class="form-control-4 rounded"
+         placeholder="search giá " aria-label="Search" aria-describedby="search-addon"/>
+
+  <input [(ngModel)]="searchByDirection" type="search" class="form-control-4 rounded"
+         placeholder="search hướng " aria-label="Search" aria-describedby="search-addon"/>
+
+  <button (click)="search()" type="button" class="btn btn-outline-primary">search</button>
+</div>
+<div id="main-container" *ngIf="landList">
+  <table class="table table-striped table-hover">
+    <thead>
+    <tr>
+      <td>STT</td>
+      <td>tiêu đề</td>
+      <td>loại bài viết</td>
+      <td>danh mục</td>
+      <td>ngày đăng</td>
+      <td>trạng thái</td>
+      <td>Action</td>
+      <td>Action</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let a of landList ; index as i ">
+      <td>{{i + 1}}</td>
+      <td>{{a.title}}</td>
+      <td>{{a.postUp.name}}</td>
+      <td>{{a.categoryLand.name}}</td>
+      <td>{{a.startDate}}</td>
+      <td>{{a.status}}</td>
+
+      <td>
+        <a style="font-size: 14px" class="badge badge-success rounded-pill d-inline">sữa</a>
+      </td>
+      <td>
+        <a style="font-size: 14px" class="badge badge-success rounded-pill d-inline">xóa</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!--success modal-->
+<div id="successModal" class="modal fade">
+  <div class="modal-dialog modal-confirm modal-confirm-success">
+    <div class="modal-content">
+      <div class="modal-header modal-header-success justify-content-center">
+        <div class="icon-box">
+          <i class="material-icons">&#xE876;</i>
+        </div>
+        <button type="button" class="close" data-mdb-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body text-center">
+        <h4>Great!</h4>
+        <p>Your account has been created successfully.</p>
+        <button type="button" class="btn btn-danger" id="delete_btn" data-mdb-dismiss="modal">Đồng ý
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

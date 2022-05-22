@@ -1,4 +1,3 @@
-
 <div class=" col-4 mx-auto" id="main-container">
   <form [formGroup]="productForm" (ngSubmit)="submit()">
     <div class="modal-header">
@@ -14,16 +13,41 @@
       <div class="mb-3">
         <label for="name" class="form-label">tên sản phẩm<span class="text-danger">(*)</span></label>
         <input type="text" class="form-control" id="name" formControlName="name">
+        <div *ngIf="name?.touched ||name.dirty">
+          <small class="text-danger" *ngIf="name?.errors?.required">tên không được để trống.</small>
+          <small class="text-danger" *ngIf="name?.errors?.pattern">tên ko đúng định dạng, định dạng dúng là
+            HS-xxxx </small>
+        </div>
+        <div *ngIf="name.valid">
+          <small class="text-success">Hợp lệ.</small>
+        </div>
+
       </div>
 
       <div class="mb-3">
         <label for="price" class="form-label">giá sản phẩm<span class="text-danger">(*)</span></label>
         <input type="text" class="form-control" id="price" formControlName="price">
+        <div *ngIf="price?.touched ||price.dirty">
+          <small class="text-danger" *ngIf="price?.errors?.required">tên không được để trống.</small>
+          <small class="text-danger" *ngIf="price?.errors?.min">tiền thuê nhỏ nhất là 1 </small>
+        </div>
+        <div *ngIf="price.valid">
+          <small class="text-success">Hợp lệ.</small>
+        </div>
+
       </div>
 
       <div class="mb-3">
         <label for="description" class="form-label">mô tả<span class="text-danger">(*)</span></label>
         <input type="text" class="form-control" id="description" formControlName="description">
+        <div *ngIf="description?.touched ||description.dirty">
+          <small class="text-danger" *ngIf="price?.errors?.required">mô tả không được để trống.</small>
+          <small class="text-danger" *ngIf="price?.errors?.maxlength">lớn nhất akf 20 kí tự </small>
+        </div>
+        <div *ngIf="description.valid">
+          <small class="text-success">Hợp lệ.</small>
+        </div>
+
       </div>
 
       <label class="form-label" for="patient">danh mục</label>
@@ -34,7 +58,7 @@
       </div>
     </div>
     <div class="modal-footer">
-      <input  type="submit" class="btn btn-primary" value="Thêm mới">
+      <input type="submit" class="btn btn-primary" value="Thêm mới">
     </div>
   </form>
 </div>
@@ -52,7 +76,9 @@
       <div class="modal-body text-center">
         <h4>Great!</h4>
         <p>Your account has been created successfully.</p>
-        <button type="button" class="btn btn-danger" id="delete_btn" data-mdb-dismiss="modal" [routerLink]="['/product']" >Đồng ý</button>
+        <button type="button" class="btn btn-danger" id="delete_btn" data-mdb-dismiss="modal"
+                [routerLink]="['/product']">Đồng ý
+        </button>
       </div>
     </div>
   </div>
