@@ -21,7 +21,7 @@ public class LandController {
     private LandService landService;
 
     @GetMapping("/all")
-    public ResponseEntity<Page<LandInformation>> getAll(@PageableDefault(value = 10) Pageable pageable,
+    public ResponseEntity<Page<LandInformation>> getAll(@PageableDefault(value = 4) Pageable pageable,
                                                         @RequestParam Optional<String> price,
                                                         @RequestParam Optional<String> area,
                                                         @RequestParam Optional<String> direction) {

@@ -16,15 +16,36 @@ export class InformationListComponent implements OnInit {
   serarchByArea = '';
   serarchByPrice = '';
   searchByDirection = '';
+  pageNumber: number;
+  totalPages = 0;
 
   ngOnInit(): void {
-    this.infomationService.getAll(this.serarchByPrice, this.serarchByArea, this.searchByDirection).subscribe((res: any) => {
+    this.infomationService.getAll(this.pageNumber,this.serarchByPrice, this.serarchByArea, this.searchByDirection).subscribe((res: any) => {
       this.landList = res.content;
-      console.log(this.landList)
+      this.pageNumber=res.pageable.pageNumber;
+      this.totalPages=res.pageable.totalPages;
     });
   }
 
   search() {
     this.ngOnInit();
+  }
+
+  previousPage() {
+    this.infomationService.getAll(this.pageNumber-1,this.serarchByPrice, this.serarchByArea, this.searchByDirection).subscribe((res: any) => {
+      this.landList = res.content;
+      this.pageNumber=res.pageable.pageNumber;
+      this.totalPages=res.totalPages;
+    });
+
+  }
+
+  nextPage() {
+    this.infomationService.getAll(this.pageNumber+1,this.serarchByPrice, this.serarchByArea, this.searchByDirection).subscribe((res: any) => {
+      this.landList = res.content;
+      this.pageNumber=res.pageable.pageNumber;
+      this.totalPages=res.pageable.totalPages;
+    });
+
   }
 }

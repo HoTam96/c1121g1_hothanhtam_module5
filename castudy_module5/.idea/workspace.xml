@@ -2,45 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a400c92-b25a-4602-b76c-6dded730c48a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/.idea/thi_end_module5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/angular-thi-module5/src/app/data/db.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/angular-thi-module5/src/app/model/ICategory.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/angular-thi-module5/src/app/model/IDirection.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/angular-thi-module5/src/app/model/ILand.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/angular-thi-module5/src/app/model/IPostUp.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/controller/LandController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/model/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/model/LandInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/model/PostUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/model/Regions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/repository/ICategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/repository/IDirection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/repository/ILandRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/repository/IPostUpRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/repository/IRegionsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/service/IGeneralService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/service/ILandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/service/impl/LandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end_2/src/main/java/com/example/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end_2/src/main/java/com/example/model/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end_2/src/main/java/com/example/model/Land.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end_2/src/main/java/com/example/model/PostUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_end_module5/back_end_2/src/main/java/com/example/model/Region.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_server/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-create/product-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-create/product-create.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-create/product-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-create/product-create.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-list/product-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-list/product-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-list/product-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/product/product-list/product-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_server/management-product/src/app/service/service-product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/management-product/src/app/service/service-product.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/brow-book-list/brow-book-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/brow-book-list/brow-book-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/brow-book-list/brow-book-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/brow-book-list/brow-book-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/brow-book-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/brow-book-service.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/brow-book/brow-book.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/brow-book/brow-book.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/brow-book/brow-book.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../thi_thu_mode5/thi-brow-book/src/app/brow-book/brow-book.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thi_end_module5/angular-thi-module5/src/app/component/information-list/information-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../thi_end_module5/angular-thi-module5/src/app/component/information-list/information-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thi_end_module5/angular-thi-module5/src/app/component/information-list/information-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../thi_end_module5/angular-thi-module5/src/app/component/information-list/information-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thi_end_module5/angular-thi-module5/src/app/service/infomation-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../thi_end_module5/angular-thi-module5/src/app/service/infomation-service.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/controller/LandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/controller/LandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/repository/ILandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../thi_end_module5/back_end/thi_end_medule5/src/main/java/com/example/repository/ILandRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +120,8 @@
       <workItem from="1653197812557" duration="839000" />
       <workItem from="1653206292146" duration="687000" />
       <workItem from="1653209779469" duration="616000" />
-      <workItem from="1653213346216" duration="269000" />
+      <workItem from="1653213346216" duration="1019000" />
+      <workItem from="1653272798613" duration="1967000" />
     </task>
     <servers />
   </component>
