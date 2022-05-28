@@ -13,8 +13,8 @@ export class InfomationServiceService {
   constructor(private http: HttpClient) {
   }
 
-  getAll(pageable, price , area , direction ): Observable<ILand[]> {
-    return this.http.get<ILand[]>(`${this.api}/all?page=${pageable}&price=${price}&area=${area}&direction=${direction}`);
+  getAll(pageable, price , area , direction,sortValue ): Observable<ILand[]> {
+    return this.http.get<ILand[]>(`${this.api}/all?page=${pageable}&price=${price}&area=${area}&direction=${direction}&sortValue=${sortValue}`);
   }
 
   addNew(land): Observable<ILand> {

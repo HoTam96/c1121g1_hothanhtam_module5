@@ -18,9 +18,10 @@ export class InformationListComponent implements OnInit {
   searchByDirection = '';
   pageNumber: number;
   totalPages = 0;
+  sortValue ="sortDateAsc";
 
   ngOnInit(): void {
-    this.infomationService.getAll(this.pageNumber,this.serarchByPrice, this.serarchByArea, this.searchByDirection).subscribe((res: any) => {
+    this.infomationService.getAll(this.pageNumber,this.serarchByPrice, this.serarchByArea, this.searchByDirection, this.sortValue).subscribe((res: any) => {
       this.landList = res.content;
       this.pageNumber=res.pageable.pageNumber;
       this.totalPages=res.pageable.totalPages;
@@ -32,7 +33,7 @@ export class InformationListComponent implements OnInit {
   }
 
   previousPage() {
-    this.infomationService.getAll(this.pageNumber-1,this.serarchByPrice, this.serarchByArea, this.searchByDirection).subscribe((res: any) => {
+    this.infomationService.getAll(this.pageNumber-1,this.serarchByPrice, this.serarchByArea, this.searchByDirection, this.sortValue).subscribe((res: any) => {
       this.landList = res.content;
       this.pageNumber=res.pageable.pageNumber;
       this.totalPages=res.totalPages;
@@ -41,11 +42,19 @@ export class InformationListComponent implements OnInit {
   }
 
   nextPage() {
-    this.infomationService.getAll(this.pageNumber+1,this.serarchByPrice, this.serarchByArea, this.searchByDirection).subscribe((res: any) => {
+    this.infomationService.getAll(this.pageNumber+1,this.serarchByPrice, this.serarchByArea, this.searchByDirection, this.sortValue).subscribe((res: any) => {
       this.landList = res.content;
       this.pageNumber=res.pageable.pageNumber;
       this.totalPages=res.pageable.totalPages;
     });
 
+  }
+
+  sort() {
+    this.infomationService.getAll(this.pageNumber,this.serarchByPrice, this.serarchByArea, this.searchByDirection, this.sortValue).subscribe((res: any) => {
+      this.landList = res.content;
+      this.pageNumber=res.pageable.pageNumber;
+      this.totalPages=res.pageable.totalPages;
+    });
   }
 }

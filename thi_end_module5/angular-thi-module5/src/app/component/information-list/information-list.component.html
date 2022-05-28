@@ -10,6 +10,16 @@
 
   <button (click)="search()" type="button" class="btn btn-outline-primary">search</button>
 </div>
+<div>
+  <select class="form-select" [(ngModel)]="sortValue" (change)="sort()">
+    <option value="sortDateAsc">mới nhất</option>
+    <option value="sortDateDesc">cũ nhất</option>
+    <option value="sortPriceAsc">giá tăng dần</option>
+    <option value="sortPriceDesc">giá giảm dần</option>
+
+  </select>
+</div>
+
 <div id="main-container" *ngIf="landList">
   <table class="table table-striped table-hover">
     <thead>

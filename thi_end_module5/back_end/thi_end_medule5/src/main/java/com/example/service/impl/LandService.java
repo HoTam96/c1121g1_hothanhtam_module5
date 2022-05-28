@@ -45,8 +45,8 @@ public class LandService implements ILandService {
     }
 
     @Override
-    public Page<LandInformation> pageFindAll(Pageable pageable, String price , String area , String direction) {
-        return iLandRepository.pageFindAll(pageable, price , area , direction);
+    public Page<LandInformation> pageFindAll(Pageable pageable, String price , String area , String direction , String sort) {
+        return iLandRepository.pageFindAll(pageable, price , area , direction , sort);
     }
 
     @Override

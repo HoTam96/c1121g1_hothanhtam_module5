@@ -7,7 +7,7 @@ import org.springframework.data.domain.Pageable;
 import java.util.List;
 
 public interface ILandService extends IGeneralService<LandInformation> {
-    Page<LandInformation> pageFindAll(Pageable pageable, String price , String area , String direction);
+    Page<LandInformation> pageFindAll(Pageable pageable, String price , String area , String direction , String sort);
     List<Category>findByCategory();
     List<Direction>findByDirection();
     List<PostUp>findByPostUp();
