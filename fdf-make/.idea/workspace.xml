@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="44c0974b-2386-4d10-b250-e64dadfb1b94" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/angular-fdf-make/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular-fdf-make/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-fdf-make/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular-fdf-make/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-fdf-make/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular-fdf-make/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-fdf-make/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-fdf-make/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-fdf-make/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-fdf-make/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-fdf-make/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-fdf-make/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-fdf-make/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-fdf-make/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-fdf-make/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/angular-fdf-make/src/styles.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/angular-fdf-make" />
+  </component>
+  <component name="ProjectId" id="29qYSJi0erMU5BrNlapL36jOLkw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="ts.external.directory.path" value="D:\module6\fdf-make\angular-fdf-make\node_modules\typescript\lib" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44c0974b-2386-4d10-b250-e64dadfb1b94" name="Default Changelist" comment="" />
+      <created>1653842080997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653842080997</updated>
+      <workItem from="1653842082494" duration="6872000" />
+      <workItem from="1653884366099" duration="1273000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

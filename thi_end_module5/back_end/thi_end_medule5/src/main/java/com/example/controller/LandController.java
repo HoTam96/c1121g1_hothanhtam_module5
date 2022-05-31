@@ -28,9 +28,6 @@ public class LandController {
                                                         @RequestParam Optional<String> direction,
                                                         @RequestParam Optional<String> sortValue) {
 //                                                         @RequestParam(value = "sortValue", defaultValue = "start_date", required = false) String sortValue
-
-
-
         String keyWord1 = price.orElse("");
         String keyWord2 = area.orElse("");
         String keyWord3 = direction.orElse("");
